@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://muratrahmikurtul.github.io/sitemap.xml 
