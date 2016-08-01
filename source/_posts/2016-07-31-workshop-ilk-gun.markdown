@@ -5,6 +5,9 @@ date: 2016-07-31 13:45:11 +0300
 comments: true
 categories: 
 ---
+Merhaba arkadaşlar uzun süredir aklımda olan blog açma fikrini hayata geçiriyorum sonunda. Faydalı olacağına inandığım konuları ve tecrübeleri sizlerle paylaşmaya çalışacağım. 
+
+
 ## Öğleden önce
 
 Sabah uyandığımda heyecanlıydım. Ruby on Rails konulu workshop için sabırsızlanıyordum. Kahvaltı bile yapmadan duş alıp direk workshop a gittim. Eğitimi en sağlıklı nerden takip edebilirim diyerek bir tahminde bulundum ve yerimi aldım. Öğleden önce bize değerli eğitmenimiz [Tayfun Bey](https://twitter.com/toziserikan?lang=tr) yardımcı olacaktı , geldi ufak bir konuşmanın ardından workshop a start verdi.Temel giriş bilgileriyle ısınma turları atarken not tutmadığımı farkeden eğitmenimin tepkisiyle hemen kalkıp kağıtlarımı alıp not tutmaya başladım. Burdan da kendisine bu vesileyle özürlerimi iletiyorum.İlk gün işlenen konular arasında **semantic versiyonlama,tasarım şablonları,mvc yapısı,activerecord associations,polimorfizm,web serverlar(server,domain,dns gibi kavramlar),restful mantığı** vardı.
