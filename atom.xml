@@ -4,7 +4,7 @@
   <title><![CDATA[mRk's Blog]]></title>
   <link href="http://muratrahmikurtul.github.io/atom.xml" rel="self"/>
   <link href="http://muratrahmikurtul.github.io/"/>
-  <updated>2016-08-01T12:28:53+03:00</updated>
+  <updated>2016-08-01T16:20:47+03:00</updated>
   <id>http://muratrahmikurtul.github.io/</id>
   <author>
     <name><![CDATA[Murat Rahmi KURTUL]]></name>
@@ -14,11 +14,360 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Workshop Serüveni İkinci Gün]]></title>
+    <link href="http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun/"/>
+    <updated>2016-08-01T14:20:04+03:00</updated>
+    <id>http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun</id>
+    <content type="html"><![CDATA[<p>Tekrar merhaba arkadaşlar bugün ikinci günü anlatacağım.</p>
+
+<h2>Öğleden Önce</h2>
+
+<p>Önceki gün olduğu gibi sabah tam 09:00 da eğitimin yapılacağı yerde yerimi almıştım. Öğleden önce kaldığımız yerden 11:30 a kadar <a href="https://twitter.com/isoakbudak?lang=tr">İsmail Bey</a>le devam edecektik.Daha sonra <a href="https://twitter.com/leylakapi?lang=tr">Leyla Hanım</a> öğle arasına kadar bize front end , yani temel seviye html,css,haml,sass,bootstrap eğitimi verecek öğleden sonra tekrar İsamil Bey ile devam edip workshop ı bitirecektik.</p>
+
+<p>09:00 itibariyle başladık. Fakat bazı arkadaşlar localhost ta çalıştırdıkları server larını kapamadan bilgisayarlarını uykuya aldıkları için bazı sorunlar yaşıyor &ldquo;rails s&rdquo; komutunu çalıştıramıyorlardı.Bu hatanın çözümü için İsmail Hocamız localhost ta port değiştirmeyi öneerdi.</p>
+
+<ul>
+<li><strong>Port Değiştirme</strong> ; terminal e</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>   rails s --port <span class="o">=</span> 3001
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>yazılarak 3000 olan portu 3001 yapıp hatayı gidermiş olduk ve &ldquo;rails s&rdquo; komutunu sorunsuz çalıştırdık.</p>
+
+<p>Bu hatayı da giderdikten sonra Cybele tool unu kullanarak kendi basit blog uygulamamızı oluşturduk.</p>
+
+<pre><code>    cybele project_name
+</code></pre>
+
+<p>Uygulama üzerindeki birkaç basit hatayı düzelttik.Örneğin profiles_controller.rb dosyasının adını profile_controller.rb olarak güncelledik.Projemizdeki controller ve modelleri inceledik.Yönetici olan kişiye hoşgeldin maili göndermek yapmamız gerekenler anlatıldı.Models altındaki admin.rb dosyasına</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>def send_welcome
+</span><span class='line'>    AdminMailer.welcome<span class="o">(</span>self.id<span class="o">)</span>.deliver_later!
+</span><span class='line'>end
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kodlarını ekledikten sonra controllerdaki admin_mailer.rb dosyasına giderek</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>def welcome admin_id
+</span><span class='line'>    @admin      <span class="o">=</span> Admin.find admin_id
+</span><span class='line'>    @subject    <span class="o">=</span> t<span class="o">(</span><span class="s1">&#39;email.admin.welcome.title&#39;</span><span class="o">)</span>
+</span><span class='line'>    mail<span class="o">(</span>to: @admin.email, subject: @subject<span class="o">)</span>
+</span><span class='line'>end
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kodlarını ekledik. Ama yönetici olan kişiye hoşgeldin maili atabilmemiz için bir şey daha yapmamız gerekiyordu. O da tekrar admin.rb dosyasına gidip</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> after_commit :send_login_info, on: :create
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>satırına</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> after_commit :send_login_info, :send_welcome, on: :create
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>eklemekti.</p>
+
+<p>Gönderdiğimiz mailin içeriğini de View altındaki admin_mailer dosyası içinde oluşturduğumuz welcome.html.haml dosyası içerisinde yazdık.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>%h2<span class="o">=</span> t<span class="o">(</span><span class="s1">&#39;email.hello&#39;</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>%p
+</span><span class='line'>    <span class="o">=</span> @admin.email
+</span><span class='line'>    İyi günler dileriz.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Bazı arkadaşlarımız mail yollamada hata aldılar. Bunun sebebi ise şuydu , controller da oluşturduğunuz action ın adı neyse -benim örneğimde welcome- view daki dosyanızın adı da o olmak zorundaydı.</p>
+
+<p>Bu arada bu maili yolladık ta nasıl yolladık?? Gibi sorular oluşmuş olabilir kafalarda. Bunların cevaplarını öğleden sonra kısmında anlatacağım.</p>
+
+<p>Bunu da yaptıktan sonra saat 11:30 olmuş ve ara vakti gelmişti..</p>
+
+<h4>Front End</h4>
+
+<p>Aradan sonra <a href="https://twitter.com/leylakapi?lang=tr">Leyla Hanım</a> ile front end e başlamıştık. Benim için uygulama geliştirmenin en zevkli kısmı front end kısmıydı.Ruby on Rails felsefesinden ve temiz kod yazma isteğinden ötürü html.erb yerine haml, css yerine de sass kullanıldığını , sass ın getirdiği kolaylıkları (kalıtım yapısı , extend ve mixin özellikleri) bize güzel bir şekilde açıklayarak artık uygulamaya geçmemizi istedi. Haml , navbar değiştirme , button ekleme css , sass ve son olarak compass a değinerek Leyla Hanım eğitimi bitirecekti.</p>
+
+<p>Bu arada html kodlarınızı haml a çevirmek için ; <a href="https://html2haml.herokuapp.com/">Bu Linki</a> kullanabilirsiniz.</p>
+
+<p>Css kodlarınızı Sass a çevirmek için ise ; <a href="http://css2sass.herokuapp.com/">Bu Linki</a> kullanabilirsiniz.</p>
+
+<p>Leyla Hanım bizden bir button eklememizi buttonun içinde hello yazmasını buttonun kırmızı olmasını ve yazının da beyaz olmasını istemişti.Ben tabiki hemen sözde sivri zeka olarak bootstrap ile danger button kullanarak dediğini yapmıştım.Fakat Leyla Hanım kontrolden sonra bootstrap ile istemediğini css ile yapmamız gerektiğini söyleyerek yaptığım çakallığı ve &ldquo;2 saniyede bitirmiş olan öğrenci&rdquo; havamı yerle bir etmişti :). Her neyse daha sonra aşağıdaki kodlarla üye ol ve giriş yap buttonlarını navbara ekleme işlemi yaptık.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>  %li
+</span><span class='line'>     <span class="o">=</span>link_to  new_user_session_path <span class="k">do</span>
+</span><span class='line'>     %i.fa.fa-sign-in<span class="o">{</span><span class="s2">&quot;aria-hidden&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;true&quot;</span><span class="o">}</span>
+</span><span class='line'>     Giriş yap
+</span><span class='line'>  %li
+</span><span class='line'>     <span class="o">=</span>link_to new_user_registration_path <span class="k">do</span>
+</span><span class='line'>     %i.fa.fa-user-plus<span class="o">{</span><span class="s2">&quot;aria-hidden&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;true&quot;</span><span class="o">}</span>
+</span><span class='line'>     Üye ol
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Son olarak compass ile button kırpma gibi işlemleri kolayca yapabildiğimizi görüp Leyla Hanım ile olan eğitimimizi tamamladık.</p>
+
+<p>Burası HAML kısmı</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#border-radius.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with all corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-top-left.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only top left corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-top-right.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only top right corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-bottom-left.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only bottom left corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-bottom-right.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only bottom right corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-top.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with top corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-bottom.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with bottom corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-left.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with left corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-right.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with right corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-combo.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with different roundings <span class="k">for</span> top/bottom and left/right
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Burası SASS kısmı</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> @import compass/css3
+</span><span class='line'>
+</span><span class='line'> @import compass/utilities
+</span><span class='line'>
+</span><span class='line'> <span class="c">#demo</span>
+</span><span class='line'>   +clearfix
+</span><span class='line'>
+</span><span class='line'> .border-radius-example
+</span><span class='line'>      width: 125px
+</span><span class='line'>      height: 125px
+</span><span class='line'>      background: red
+</span><span class='line'>      margin: 20px
+</span><span class='line'>      float: left
+</span><span class='line'>      padding: 5px
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius</span>
+</span><span class='line'>      +border-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-top-left</span>
+</span><span class='line'>      +border-top-left-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-top-right</span>
+</span><span class='line'>      +border-top-right-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-bottom-left</span>
+</span><span class='line'>      +border-bottom-left-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-bottom-right</span>
+</span><span class='line'>      +border-bottom-right-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-top</span>
+</span><span class='line'>      +border-top-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-bottom</span>
+</span><span class='line'>      +border-bottom-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-left</span>
+</span><span class='line'>      +border-left-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-right</span>
+</span><span class='line'>      +border-right-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-combo</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>top, left, 40px<span class="o">)</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>top, right, 5px<span class="o">)</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>bottom, left, 15px<span class="o">)</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>bottom, right, 30px<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Öğleden Sonra</h2>
+
+<p>Eğitimin en yorucu kısmı 2.gün öğleden sonrasıydı. Rollbar , sidekiq , sendgrid gibi konuları işleyecek ve bloğumuzu heroku ya deploy edecektik.Bu arada heroku deploy olayını ileriki yazılarımın birinde ayrıntılı bir şekilde anlatacağım.Bu yazıda ayrıntılı yer vereceğim şey ise sendgrid olacak.</p>
+
+<ul>
+<li><strong>Rollbar</strong> anladığım kadarı uygulamanızda oluşan hataları görüntülüyor ve rapor veriyor bu sayede de analiz edip çözmeyi sağlıyor.</li>
+<li><strong>Sidekiq</strong> Ruby için verimli arkaplan job processing i.</li>
+<li><strong>Sendgrid</strong> ise bahsettiğim mail yollama işlerini üzerinden yaptığımız yardımcı bir platform.</li>
+</ul>
+
+
+<p>Sendgrid e üye oluyoruz. Yalnız üye olurken gerçek bilgilerinizi vermenizi öneririm çünkü bir süzgeçten geçiriyolar.Üye olduktan bir süre sonra üyeliğimiz onaylanıyor ve işlemlerimize geçebiliyoruz. <strong>Settings</strong> e gelip <strong>Credentials</strong> a tıklıyoruz.<strong>Add New Credential</strong> diyoruz.Username ve password girip -bu arada username inizi anlamlı vermenizi öneririm- alttaki mail kısmını işaretleyip(check edip) <strong>Create Credential</strong> diyoruz.Daha sonra env.staging dosyamıza gelip</p>
+
+<ul>
+<li>SMTP_PASSWORD=</li>
+<li>SMTP_USER_NAME=</li>
+<li>SMTP_ADDRESS=</li>
+</ul>
+
+
+<p>kısımlarını doldurup kaydediyoruz.Sıradaki adımımız ise bunları herokuya setlemek oluyor.Bunu da aşağıdaki kod ile yapıyoruz.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>heroku config:set <span class="nv">SMTP_PASSWORD</span><span class="o">=</span> ******
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Unutmayın password , username ve adress in her biri için setleme yapılmalıdır.</p>
+
+<p>Setleme işlemlerini de bitirdikten sonra heroku dashboard a gidip settings e girip  &ldquo;Revial Config Vars&rdquo; a tıklayıp setleyip setleyemediğimizi kontrol ediyoruz.Eğer adımları doğru uyguladıysak set ettiğimiz alanları orada görüyoruz ve artık uygulamamızda gönderdiğimiz mailleri sorunsuzca gönderebiliyoruz.</p>
+
+<p><span style="color:red;">Dip not : Heroku da resources kısmında worker ınızın on durumda olması gerekmektedir.</span></p>
+
+<p>Ve bunun sonunda ikinci günü de bitirip workshop ı sonlandırdık.Umarım anlattıklarım içinde herkes kendine yararlı olabilcek şeyler bulmuştur.Kendinize iyi bakın sağlıklı beslenin!! :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Workshop Serüveni İlk Gün]]></title>
     <link href="http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun/"/>
     <updated>2016-07-31T13:45:11+03:00</updated>
     <id>http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun</id>
-    <content type="html"><![CDATA[<h2>Öğleden önce</h2>
+    <content type="html"><![CDATA[<p>Merhaba arkadaşlar uzun süredir aklımda olan blog açma fikrini hayata geçiriyorum sonunda. Faydalı olacağına inandığım konuları ve tecrübeleri sizlerle paylaşmaya çalışacağım.</p>
+
+<h2>Öğleden önce</h2>
 
 <p>Sabah uyandığımda heyecanlıydım. Ruby on Rails konulu workshop için sabırsızlanıyordum. Kahvaltı bile yapmadan duş alıp direk workshop a gittim. Eğitimi en sağlıklı nerden takip edebilirim diyerek bir tahminde bulundum ve yerimi aldım. Öğleden önce bize değerli eğitmenimiz <a href="https://twitter.com/toziserikan?lang=tr">Tayfun Bey</a> yardımcı olacaktı , geldi ufak bir konuşmanın ardından workshop a start verdi.Temel giriş bilgileriyle ısınma turları atarken not tutmadığımı farkeden eğitmenimin tepkisiyle hemen kalkıp kağıtlarımı alıp not tutmaya başladım. Burdan da kendisine bu vesileyle özürlerimi iletiyorum.İlk gün işlenen konular arasında <strong>semantic versiyonlama,tasarım şablonları,mvc yapısı,activerecord associations,polimorfizm,web serverlar(server,domain,dns gibi kavramlar),restful mantığı</strong> vardı.</p>
 
