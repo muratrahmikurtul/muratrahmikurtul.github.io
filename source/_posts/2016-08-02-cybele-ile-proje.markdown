@@ -42,11 +42,19 @@ Sırada ise **config** in altındaki **"settings.yml"** dosyasına giderek
             password: yeniDeneme
 
 
-Kısımlarının bu şekilde olduğundan emin oluyoruz.Bu ayarlar Cybele tool u içindeki gemlerin çalışması için gereklidir. Unutmayın "yeniDeneme" benim projemin adı sizin ekranınızda sizin projenizin ismi yazılı olacaktır.Burayı da kontrol edip gerekliyse değişiklik yaptıktan sonra terminalimizi tekrar açıyoruz ve ,
+Kısımlarının bu şekilde olduğundan emin oluyoruz.Bu ayarlar Cybele tool u içindeki gemlerin çalışması için gereklidir. Unutmayın "yeniDeneme" benim projemin adı sizin ekranınızda sizin projenizin ismi yazılı olacaktır.Burayı da kontrol edip gerekliyse değişiklik yaptıktan sonra terminalimizi tekrar açıyoruz ve cd komutu ile public dosyasına girip şunu ,
+
+
+           ln -s ../VERSION.txt VERSION.txt
+             
+
+
+           
+yazıyoruz terminale ve tekrar üst dizine geçip terminale
 
            bundle
            
-yazıyoruz.
+yazıyoruz.           
            
 Şimdi database işlemlerine geçme vakti geldi.Terminalimize ,
            
