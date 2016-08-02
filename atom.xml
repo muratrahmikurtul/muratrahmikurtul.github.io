@@ -4,7 +4,7 @@
     <title><![CDATA[mRk's Blog]]></title>
     <link href="http://muratrahmikurtul.github.io/atom.xml" rel="self"/>
     <link href="http://muratrahmikurtul.github.io/"/>
-    <updated>2016-08-02T10:44:22+03:00</updated>
+    <updated>2016-08-02T16:17:04+03:00</updated>
     <id>http://muratrahmikurtul.github.io/</id>
     <author>
         <name><![CDATA[Murat Rahmi KURTUL]]></name>
@@ -12,6 +12,158 @@
     </author>
     <generator uri="http://octopress.org/">Octopress</generator>
 
+    
+    <entry>
+        <title type="html"><![CDATA[Ubuntuda Cybele ile Proje Oluşturma]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/08/02/cybele-ile-proje/"/>
+        <updated>2016-08-02T15:19:21+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/08/02/cybele-ile-proje</id>
+        <content type="html"><![CDATA[<p>Evet arkadaşlar tekrar merhaba.Bugün sizlere ubuntuda Cybele tool u ile nasıl Ruby on Rails projesi oluşturabilirsiniz onu anlatacağım.Her şeyden önce Cybele yi indirip kullanabilmeniz için şu anlık gerekli olan en düşük Ruby versiyonu 2.3 , Rails versiyonu ise 4.2 dir.Eğer versiyonlarınız bunlardan eski ise lütfen güncelleyiniz.</p>
+
+<p>Öncelikle Cybele gemini indirmemiz gerekiyor. Bunun için terminalimize ,</p>
+
+<pre><code>    gem install cybele
+</code></pre>
+
+<p>yazıyoruz. Daha sonra indirim tamamlanınca terminalimize ,</p>
+
+<pre><code>    cybele project_name    
+</code></pre>
+
+<p>yazıyoruz ve Cybele ile projemizi oluşturuyoruz. &ldquo;project_name&rdquo; kısmı sizin projenize vermek istediğiniz ismi yazacağınız kısım.Ben projemin adını &ldquo;yeniDeneme&rdquo; olarak belirledim.Bundan sonraki örneklerde &ldquo;yeniDeneme&rdquo; ismi üzerinden devam edeceğim lütfen dikkat edelim.</p>
+
+<p>Şimdi yapmamız gerekenlerden biri ise kullandığımız derleyicide oluşturduğumuz projeyi açıp <strong>db</strong> dosyasından <strong>migrate</strong> sekmesine ordan da <strong>&ldquo;devise_create_user&rdquo;</strong> ve <strong>&ldquo;devise_crate_admin&rdquo;</strong> dosyalarının içine girerek ,</p>
+
+<pre><code>      t.boolean :is_active
+</code></pre>
+
+<p>satırını ,</p>
+
+<pre><code>      t.boolean :is_active, default: true  
+</code></pre>
+
+<p>olarak değiştirmektir.Unutmayın user ve admin dosyalarının ikisinin de içini değiştiriyoruz.</p>
+
+<p>Sırada ise <strong>config</strong> in altındaki <strong>&ldquo;settings.yml&rdquo;</strong> dosyasına giderek</p>
+
+<pre><code>      basic_auth:
+        username: yeniDeneme
+        password: yeniDeneme
+
+      sidekiq:
+        username: yeniDeneme
+        password: yeniDeneme
+</code></pre>
+
+<p>Kısımlarının bu şekilde olduğundan emin oluyoruz.Bu ayarlar Cybele tool u içindeki gemlerin çalışması için gereklidir. Unutmayın &ldquo;yeniDeneme&rdquo; benim projemin adı sizin ekranınızda sizin projenizin ismi yazılı olacaktır.Burayı da kontrol edip gerekliyse değişiklik yaptıktan sonra terminalimizi tekrar açıyoruz ve ,</p>
+
+<pre><code>       bundle
+</code></pre>
+
+<p>yazıyoruz.</p>
+
+<p>Şimdi database işlemlerine geçme vakti geldi.Terminalimize ,</p>
+
+<pre><code>       sudo -u postgres psql
+</code></pre>
+
+<p>komutunu yazıyoruz ve şifremizi giriyoruz.(herzamanki bilgisayar şifreniz).Projemize dönerek config dosyası altındaki &ldquo;database.yml&rdquo; yi açıyoruz.</p>
+
+<pre><code>       development: &amp;default
+         adapter: postgresql
+         database: yeniDeneme_development
+         encoding: utf8
+         min_messages: warning
+         pool: 5
+         timeout: 5000
+         host: localhost
+         port: 5432
+</code></pre>
+
+<p>olan kodlara username ve passoword ekliyoruz.</p>
+
+<pre><code>         development: &amp;default
+           adapter: postgresql
+           database: yeniDeneme_development
+           encoding: utf8
+           min_messages: warning
+           pool: 5
+           timeout: 5000
+           host: localhost
+           port: 5432
+           username: mrk
+           password: mrk
+</code></pre>
+
+<p>Ben username ve password umu &ldquo;mrk&rdquo; olarak belirledim.Bundan sonraki işlemleri ona göre yapacağım lütfen dikkat ediniz.Tekrar terminale geliyoruz.İlk olarak</p>
+
+<pre><code>            CREATE DATABASE ‘yeniDeneme_development’;
+</code></pre>
+
+<p>komutunu yazıyoruz.&ldquo;yeniDeneme_development&rdquo; yazmamın sebebei &ldquo;database.yml&rdquo; dosyasında &ldquo;database: yeniDeneme_development&rdquo; yazmasıdır. Daha sonra ,</p>
+
+<pre><code>            CREATE USER mrk WITH PASSWORD ‘mrk’;
+</code></pre>
+
+<p>yazıyoruz. Sonrasında</p>
+
+<pre><code>            ALTER USER root WITH SUPERUSER;
+</code></pre>
+
+<p><strong>veya</strong> dikkat edin lütfen &ldquo;veya&rdquo;</p>
+
+<pre><code>            ALTER USER mrk WITH PASSWORD ‘mrk’;
+</code></pre>
+
+<p>yazarak postgresql işemlerini tamamlıyoruz.Çıkış yapmak için</p>
+
+<pre><code>            \q
+</code></pre>
+
+<p>yazıyoruz.</p>
+
+<p>Şimdi yapmamız gereken şey terminale sırasıyla</p>
+
+<pre><code>            bundle exec rake db:create
+</code></pre>
+
+<p>ve</p>
+
+<pre><code>            bundle exec rake db:migrate
+</code></pre>
+
+<p>komutlarını yazmaktır.</p>
+
+<p>Bu komutları yazdıktan sonra derleyicimizde -ben RubyMine için anlatacağım- View in altından Tool Windows a geliyoruz , Tool Windows un altından Database e tıklıyoruz. Gelen pencerede &ldquo;+&rdquo; simgesine tıklayarak Data Source sekmesinden PostgreSQL i seçiyoruz. Ve ekranı şu şekilde dolduruyoruz. Unutmayın siz sizin kendi verilerinize göre dolduracaksınız.</p>
+
+<p><a href="http://tinypic.com?ref=xqj8sp" target="_blank"><img src="http://i67.tinypic.com/xqj8sp.jpg" border="0" alt="Image and video hosting by TinyPic"></a></p>
+
+<p>Database : &ldquo;database.yml&rdquo; kısmında yazan yeniDeneme.development , user ve passwordu gene kendim &ldquo;database.yml&rdquo; dosyasında kendi oluşturduğum username ve password olan &ldquo;mrk&rdquo; ile doldurup &ldquo;Test Connection&rdquo; butonuna basıyorum ve database ile bağlantımı oluşturuyorum.</p>
+
+<p>Şimdi terminalime</p>
+
+<pre><code>           bundle exec rake dev:seed
+</code></pre>
+
+<p>yazıyorum ve yeni bir terminal açarak aşağıdaki komutla redis server ımı çalıştırıyorum.</p>
+
+<pre><code>           redis-server
+</code></pre>
+
+<p> Cybele ile proje oluşturduğunuzda arka taraftaki işler için redis server ınızın açık olması gerekmektedir.Tekrar eski terminalime geri gelerek</p>
+
+<pre><code>           rails s
+</code></pre>
+
+<p> komutunu çalıştırıp localde projemi çalıştırmış oluyorum ve karşıma şöyle bir ekran geliyor.</p>
+
+<p> <a href="http://tinypic.com?ref=21yasw" target="_blank"><img src="http://i68.tinypic.com/21yasw.png" border="0" alt="Image and video hosting by TinyPic"></a></p>
+
+<p> Evet arkadaşlar bugün sizlere Cybele ile nasıl Rails projesi oluşturulur bahsettim. Bundan sonra projenizi ne şekilde geliştireceğiniz size kalmış. Hepinize mutlu günler/geceler dileyerek yazımı sonlandırıyorum. Hoşçakalın!</p>
+
+<p> <a href="https://github.com/lab2023/cybele">Kaynak</a></p>
+]]></content>
+    </entry>
     
     <entry>
         <title type="html"><![CDATA[Workshop Serüveni İkinci Gün]]></title>
