@@ -19,7 +19,7 @@ yazıyoruz. Daha sonra indirim tamamlanınca terminalimize ,
 
         cybele project_name    
         
-yazıyoruz ve Cybele ile projemizi oluşturuyoruz. "project_name" kısmı sizin projenize vermek istediğiniz ismi yazacağınız kısım.Ben projemin adını "yeniDeneme" olarak belirledim.Bundan sonraki örneklerde "yeniDeneme" ismi üzerinden devam edeceğim lütfen dikkat edelim.
+yazıyoruz ve Cybele ile projemizi oluşturuyoruz. "project_name" kısmı sizin projenize vermek istediğiniz ismi yazacağınız kısım.Ben projemin adını "yeniDeneme" olarak belirledim.Bundan sonraki örneklerde "yeniDeneme" ismi üzerinden devam edeceğim lütfen dikkat edelim. İlk olarak yapmam gereken ruby versiyonumu kontrol ederek projemdeki ".ruby-version" dosyasındakiyle aynı mı değil mi bakmaktır.Değilse dosya içine kendi versiyonumuzu yazıyoruz.
         
 Şimdi yapmamız gerekenlerden biri ise kullandığımız derleyicide oluşturduğumuz projeyi açıp **db** dosyasından **migrate** sekmesine ordan da **"devise_create_user"** ve **"devise_crate_admin"** dosyalarının içine girerek ,
           
