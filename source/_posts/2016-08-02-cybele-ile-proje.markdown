@@ -88,7 +88,7 @@ komutunu yazıyoruz."yeniDeneme_development" yazmamın sebebei "database.yml" do
 
 yazıyoruz. Sonrasında
                 
-                ALTER USER root WITH SUPERUSER;
+                ALTER USER mrk WITH SUPERUSER;
                  
 **veya** dikkat edin lütfen "veya"
                  
