@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[mRk's Blog]]></title>
-  <link href="http://muratrahmikurtul.github.io/atom.xml" rel="self"/>
-  <link href="http://muratrahmikurtul.github.io/"/>
-  <updated>2016-08-01T16:20:47+03:00</updated>
-  <id>http://muratrahmikurtul.github.io/</id>
-  <author>
-    <name><![CDATA[Murat Rahmi KURTUL]]></name>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[mRk's Blog]]></title>
+    <link href="http://muratrahmikurtul.github.io/atom.xml" rel="self"/>
+    <link href="http://muratrahmikurtul.github.io/"/>
+    <updated>2016-08-02T10:28:53+03:00</updated>
+    <id>http://muratrahmikurtul.github.io/</id>
+    <author>
+        <name><![CDATA[Murat Rahmi KURTUL]]></name>
+        
+    </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Workshop Serüveni İkinci Gün]]></title>
-    <link href="http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun/"/>
-    <updated>2016-08-01T14:20:04+03:00</updated>
-    <id>http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun</id>
-    <content type="html"><![CDATA[<p>Tekrar merhaba arkadaşlar bugün ikinci günü anlatacağım.</p>
+    
+    <entry>
+        <title type="html"><![CDATA[Workshop Serüveni İkinci Gün]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun/"/>
+        <updated>2016-08-01T14:20:04+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun</id>
+        <content type="html"><![CDATA[<p>Tekrar merhaba arkadaşlar bugün ikinci günü anlatacağım.</p>
 
 <h2>Öğleden Önce</h2>
 
@@ -358,14 +358,14 @@
 
 <p>Ve bunun sonunda ikinci günü de bitirip workshop ı sonlandırdık.Umarım anlattıklarım içinde herkes kendine yararlı olabilcek şeyler bulmuştur.Kendinize iyi bakın sağlıklı beslenin!! :)</p>
 ]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Workshop Serüveni İlk Gün]]></title>
-    <link href="http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun/"/>
-    <updated>2016-07-31T13:45:11+03:00</updated>
-    <id>http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun</id>
-    <content type="html"><![CDATA[<p>Merhaba arkadaşlar uzun süredir aklımda olan blog açma fikrini hayata geçiriyorum sonunda. Faydalı olacağına inandığım konuları ve tecrübeleri sizlerle paylaşmaya çalışacağım.</p>
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Workshop Serüveni İlk Gün]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun/"/>
+        <updated>2016-07-31T13:45:11+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun</id>
+        <content type="html"><![CDATA[<p>Merhaba arkadaşlar uzun süredir aklımda olan blog açma fikrini hayata geçiriyorum sonunda. Faydalı olacağına inandığım konuları ve tecrübeleri sizlerle paylaşmaya çalışacağım.</p>
 
 <h2>Öğleden önce</h2>
 
@@ -481,6 +481,6 @@
 
 <p>Öğleden sonranın tamamı kurulum ve gem tanımayla geçti. İkinci gün, nihayet kodlamaya, basit bir blog uygulaması yapmaya geçebilecektik. Burada yazımı şimdilik sonlandırıyorum. İkinci günü diğer yazımda anlatacağım. Hepinize bol RoR lu günler dilerim! :)</p>
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>
