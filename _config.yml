@@ -69,9 +69,9 @@ oscailte:
             footer: false
             sidebar: true
         footer-cols: 6 # Number of columns available for the footer component, max 12
-        available: true # Whether or not you're available for hire
+        available: false # Whether or not you're available for hire
         vibrant: false # Makes the widget much more noticeable
-        message: "Available for new opportunities"
+        message:
     social:
         visible: true
         title: # Defaults to "Follow me!" if not present
@@ -80,14 +80,14 @@ oscailte:
         dribbble:
         facebook:
             user:
-            app_id: # For enabling Open Graph metadata
+            app_id: murat.kurtul
         github:
             user:
             show_profile_link:
         googleplus:
         hackernews:
         keybase:
-        linkedin:
+        linkedin: https://hr.linkedin.com/in/leylakapi
         pinterest:
         reddit:
         stackoverflow:
