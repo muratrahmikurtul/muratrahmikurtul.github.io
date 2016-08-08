@@ -4,7 +4,7 @@
     <title><![CDATA[mRk's Blog]]></title>
     <link href="http://muratrahmikurtul.github.io/atom.xml" rel="self"/>
     <link href="http://muratrahmikurtul.github.io/"/>
-    <updated>2016-08-02T17:31:21+03:00</updated>
+    <updated>2016-08-08T10:44:52+03:00</updated>
     <id>http://muratrahmikurtul.github.io/</id>
     <author>
         <name><![CDATA[Murat Rahmi KURTUL]]></name>
@@ -27,7 +27,7 @@
 
 <p>yazıyoruz. Daha sonra indirim tamamlanınca terminalimize ,</p>
 
-<pre><code>    cybele project_name    
+<pre><code>    cybele project_name -d postgresql
 </code></pre>
 
 <p>yazıyoruz ve Cybele ile projemizi oluşturuyoruz. &ldquo;project_name&rdquo; kısmı sizin projenize vermek istediğiniz ismi yazacağınız kısım.Ben projemin adını &ldquo;yeniDeneme&rdquo; olarak belirledim.Bundan sonraki örneklerde &ldquo;yeniDeneme&rdquo; ismi üzerinden devam edeceğim lütfen dikkat edelim. İlk olarak yapmam gereken ruby versiyonumu kontrol ederek projemdeki &ldquo;.ruby-version&rdquo; dosyasındakiyle aynı mı değil mi bakmaktır.Değilse dosya içine kendi versiyonumuzu yazıyoruz.</p>
