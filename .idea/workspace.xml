@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="699bfde1-f42f-4931-bb05-3b1b4748d6a4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.themes/oscailte" afterPath="$PROJECT_DIR$/.themes/oscailte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2016-08-02-cybele-ile-proje.markdown" afterPath="$PROJECT_DIR$/source/_posts/2016-08-02-cybele-ile-proje.markdown" />
     </list>
     <ignored path="octopress.iws" />
@@ -39,8 +38,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="240">
-                <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <first_editor relative-caret-position="345">
+                <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -302,12 +301,12 @@
       <workItem from="1470134517723" duration="11000" />
       <workItem from="1470140288994" duration="4625000" />
       <workItem from="1470148061654" duration="158000" />
-      <workItem from="1470641949710" duration="302000" />
+      <workItem from="1470641949710" duration="912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29009000" />
+    <option name="totallyTimeSpent" value="29619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -728,8 +727,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="240">
-            <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <first_editor relative-caret-position="345">
+            <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
             <folding />
           </first_editor>
           <second_editor />
