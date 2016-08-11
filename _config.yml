@@ -92,7 +92,7 @@ oscailte:
         reddit:
         stackoverflow:
         twitter:
-            user:
+            user: mrahmikurtul
             widget: # Shows the Recent Tweets widget in sidebar
                 is_shown:
                 show_profile_link:
