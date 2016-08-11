@@ -1,0 +1,64 @@
+---
+layout: post
+title: "LYK2016 ilk hafta"
+date: 2016-08-11 15:31:14 +0300
+comments: true
+categories: 
+---
+
+
+Tekrardan merhabalar herkese. Bu yazımda sizlere Linux yaz kampında ilk hafta nasıl geçti neler oldu neler bitti onları anlatacağım.Umarım beğenirsiniz.
+
+4 Ağustos gecesi Bolu'ya gitmek üzere Denizli'den yola çıktık. 5 Ağustos sabah saatlerinde Bolu'ya kampın yapılacağı yer olan Abant İzzet Baysal Üniversitesi'ne vardık. İlk olarak kampa kaydımızı yaptırdıktan sonra kalacağımız yer olan kyk da da kayıt işlemlerini hallettik. 13:30 daki toplantıya katılıp kampın gidişatı hakkında bilgiler aldık ve sınıflarımıza gittik. Ben Linux yaz kampında "Ruby on Rails" kursuna katıldım. İlk gün kurulum yapan öğrenciler ben de dahil serbest bırakıldık ve kalacağımız yerlere yollandık. Kalan arkadaşlar gerekli kurulumları yaptılar. Yurda geldim , -bu arada kyk diyip geçmeyin gerçekten gayet konforlu bir yurt- yolculuğun verdiği yorgunluk sebebiyle hemen uyudum. Sabah 8 sularında kalktım dersler 09:30 21:30 arası olduğundan beni gayet yoğun bir gün bekliyordu. Kahvaltımı kampüste yapıp dersi alacağımız sınıfa geçtim. Derslere Ruby ile başlayacaktık. Bu derste bize yardımcı olacak eğitmenimiz [Umurcan Bey](https://twitter.com/ugorur)di. Kendisi bize Ruby temelleri ile ilgili ders verdi. Dersle ilgili kısaca notlardan bahsedecek olursak = ! gibi ifadeler metot isimlerinde kullanılabilir. parantez kullanmaya genelde gerek yoktur. Son satırını her zaman return eder , o yüzden return yazmaya gerek yoktur. ! değişkenin değerini değiştirir(a=umur a.reverse rumu döndürür ama a haala umur dur , sonunda ! koyarak a.reverse! yazarsan a artık rumu dur.). ? varsa true veya false döndürür.Sabit isimleri büyük harfle baslar class module gibi , yerel değişkenler kücük harf veya "_" ile başlar.globaller dolar ile , degiskenler @ ve @@ ile , @@ sınıfın kendi icindeki degiskendir. Baska dilde console a girip ruby -e yazarak ruby kodlarını calıstırabilirsiniz. (ruby-doc.org) BigDecimal kütüphanesi Float veri tipinde yuvarlama hatalarını önler. (BigDecimal("0.33")*10).to_f , örneğin sayı1 = -8 , "sayi1.abs" derseniz mutlak deger yani 8 döner. "0b" binary "0x" hexadecimal olarak sayıları yazmaya yarar (elektronik aletler). Metin birleştirme "+" ve "<<" ile olur. puts "#{'akademik'.capitalize} #{'bilişim'.upcase}" ile icine kodda gömebilirsiniz. "unicode_utils" gem i ile türkçe karakter soununu cozebilirsiniz.Array ler ekrana "inspect" ile yazdırılır. diziler "+" ile toplanır "<<" ile yeni eleman eklenir. ".flatten" kodu dizi icindeki dizileri tek dizi haline getirir.Ruby de her şey objedir.Primitive veri tipi yoktur. self anahtar kelimesi o anki class ı işaret eder. Notlar da yazım hataları varsa kusura bakmayın direk buraya attım ders esnasındaki aldığım notları , düzeltme fırsatım olmadı malesef. Bu güzel eğitimin ardından ara verdik.
+
+
+Daha sonra gük içinde sıradaki dersimizde bize yardımcı olacak eğitmenimiz [Tayfun Bey](https://twitter.com/toziserikan?lang=tr) di. Kendisiyle çok verimli geçen bir ders işledik . Ders notlarını önceki yazılarımda bulabilirsiniz.
+
+<img src="http://i66.tinypic.com/t9h8h0.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Ertesi gün de bize ders veren eğitimcilerimiz arasında [Leyla Hanım](https://twitter.com/leylakapi?lang=tr) da vardı. Kendisi bize front end ile ilgili bir değitim verdi.
+<img src="http://i66.tinypic.com/235f69.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Bir diğer eğitmenimiz ise [İsmail Bey](https://twitter.com/isoakbudak?lang=tr) di. O da bize rails projesindeki dizinlerden bahsetti.
+<img src="http://i64.tinypic.com/2qisebl.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+İlk hafta gerçekten çok yoğun tempolu güzel bir eğitim süreci geçirdik. Eğtimler arasında [Kader Hanım](https://twitter.com/sucuklukfasulye) ın verdiği git,git kurulumu,git ayarları dersi de vardı.
+<img src="http://i68.tinypic.com/zu5bmh.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Bize bir projede takım olarak nasıl çalışılır , branch ler üzerinden proje nasıl yönetilir. Bunlar hakkında bilgi verdi. Derste aklımda kalan ve dersi tam anlamıyla özetleyen söz ise Tayfun Hocadan gelmişti "Branch ler çalışanların birbirlerini beklemelerini ve birbirlerinin ayaklarına basmalarını engeller."
+
+Bu 5 Hocamız verdikleri güzel derslerden sonra malesef aramızdan ayrılmak zorunda kaldılar. Onlara burdan da tekrar teşekkürlerimi iletiyorum.
+
+Bizle devam eden hocalarımızdan [Muhammet Bey](https://twitter.com/m_dilmac)ise bize linux terminal kullanımı ile ilgili bir ders verdi.
+<img src="http://i68.tinypic.com/2a4rac2.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Hocamızın verdiği dersten notlara değinecek olursak cd komutu ile dosya dizinine gitmek , cd .. komutu ile üst dizine geçmek ,cat komutu ile bir dosyanın icerigini göstermek. mkdir komutu ile dizin oluştulması ,pwd komutu ile bulunduğun dizinin gösterilmesi gibi bilgilerdir.
+
+Giriş dersleri bittikten sonra , nihayet rails projemize başlayabilcektik. Bu projede bize yardımcı olacak eğitmenlerimiz ise [Mehmet Bey](https://twitter.com/beydogan_) ve [Saygın Bey](https://twitter.com/sayginburak) di.
+
+Mehmet Hocamız ile bir proje sınıfta , bir projeyi ise kendimiz ödev olarak paralel bir şekilde yapacağız.
+<img src="http://i68.tinypic.com/2j61oq8.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Kendisi ile başladığımız proje bir "idea board" projesi. Şu an projede oluşturulan fikirleri listeleme aşamasındayız. Bunun için örnek kod göstericek olursak.
+
+```sh
+   Listing Ideas <br />
+   
+     <%= @ideas.count %><br />
+   
+     <% @ideas.each do |ideas| %>
+          ID: <%= ideas.id%>  Title:<a href="<%=idea_path(ideas.id)%>"><%= ideas.title%></a>---Desc:<%= ideas.description%><br />
+     <%end%>
+```
+
+İlk haftadaki genel izlenimlerim , eğer linux yaz kampına katılsam mı diye düşünüyorsanız bunu mutlaka gerçekleştirin. Buradaki herkes gönüllülük esasına dayanarak çalışmakta. İstediğiniz her soruya -nekadar saçma olursa olsun- bir cevap buluyorsunuz. Sıkılmadan ve usanmadan sadece size yardımcı olabilmek için eğitimler veriliyor. Emeği geçen herkese tekrar teşekkür ederiz.
+
+Ee 15 gün boyunca sürekli ders ders olmaz tabi di mi? Biz de izin günümüz olan perşembe günü sınıfça toplanıp bir şeyler yapmaya karar verdik. Sabah birlikte bir kahvaltı ordan da Gölcük'e geziye gittik. Yalnız az sonra fotoğrafını da göreceğiniz yer Abant değil arkadaşlar. "Gölcük". Herkeste nedense orasının "Abant" olduğuna dair bir kanı var ama orası "Gölcük" lütfen dikkat edelim :D. Sabah 10:00 sularında kahvaltımızı yapmak üzere Pipo isimli bir mekanda toplandık. Kahvaltımızı yaptık sohbetimizi ettik bir de üstüne güzel bir nargile içtik :)
+
+<img src="http://i66.tinypic.com/35leqtg.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Karnımızı doyurduktan sonra artık Gölcük için yola koyulma vakti gelmişti. Otobüsün ufağı minibüsün büyüğü sanırım midibüs deniyor , onla Gölcük'e yola cıktık. Gölcük şehir merkezine 12 km yani oldukça yakın. Gölcük , gerçekten de o resimlerde gördüğünüz gibi harika bir yer. Gelip görmenizi tavsiye ederim. Sınıfça bol bol fotoğraf çektirip , eğlendikten sonra Gölcük gezimizinde sonuna geldik.
+
+<img src="http://i66.tinypic.com/28ck8xs.jpg" border="0" alt="Image and video hosting by TinyPic">
+
+Evet arkadaşlar ilk hafta izlenimlerim bu şekilde. Umarım eğlendiğiniz, linux yaz kampı hakkında ufak ta olsa fikir sahibi olduğunuz bir yazı olmuştur.Sağlıklı beslenmeyi unutmuyoruz! :).Hoşçakalın
