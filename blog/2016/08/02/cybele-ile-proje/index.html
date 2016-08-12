@@ -1,0 +1,429 @@
+<!doctype html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    
+      
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ubuntuda Cybele ile Proje Oluşturma - mRk's Blog</title>
+        <meta name="author" content="Murat Rahmi KURTUL">
+        
+        <meta name="description" content="Ubuntuda Cybele ile Proje Oluşturma Aug 2nd, 2016 Evet arkadaşlar tekrar merhaba.Bugün sizlere ubuntuda Cybele tool u ile nasıl Ruby on Rails &hellip;">
+        
+        <meta name="viewport" content="width=device-width">
+        <link rel="canonical" href="http://muratrahmikurtul.github.io/blog/2016/08/02/cybele-ile-proje">
+
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+
+        
+        <link href="/favicon.png" rel="icon">
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+        <link href="/atom.xml" rel="alternate" title="mRk's Blog" type="application/atom+xml">
+    </head>
+
+
+    <body >
+
+        <header id="header">
+    <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4">
+        <a href="/" class="site-title">mRk's Blog</a>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-8">
+        <nav>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu"></label>
+    <ul class="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+</ul>
+
+</nav>
+
+    </div>
+</div>
+
+</header>
+
+
+        <div id="main-content">
+
+            <!--[if lte IE 9]>
+<div class="row upgrade-row">
+    <div class="col-lg-12">
+        <div class="upgrade">
+            <i class="upgrade__icon fa fa-warning"></i>
+            <h1 class="upgrade__title h6">Ohnoes!</h1>
+            <p class="upgrade__text">
+                Unfortunately, certain parts of this site may not display correctly in your version of Internet Explorer!<br>
+                If possible, you should consider <a href="http://browsehappy.com/">upgrading your browser</a>.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- <![endif]-->
+
+
+            
+
+            <div class="row top-xs center-sm center-md center-lg site-wrapper">
+                
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                
+                    <article class="article article--single">
+    <header class="article__header">
+    
+        <h1 class="article__title">Ubuntuda Cybele ile Proje Oluşturma</h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="2016-08-02T15:19:21+03:00" pubdate><i class="fa fa-calendar"></i> Aug 2nd, 2016</time>
+
+
+
+
+            
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    <p>Evet arkadaşlar tekrar merhaba.Bugün sizlere ubuntuda Cybele tool u ile nasıl Ruby on Rails projesi oluşturabilirsiniz onu anlatacağım.Her şeyden önce Cybele yi indirip kullanabilmeniz için şu anlık gerekli olan en düşük Ruby versiyonu 2.3 , Rails versiyonu ise 4.2 dir.Eğer versiyonlarınız bunlardan eski ise lütfen güncelleyiniz.</p>
+
+<p>Öncelikle Cybele gemini indirmemiz gerekiyor. Bunun için terminalimize ,</p>
+
+<pre><code>    gem install cybele
+</code></pre>
+
+<p>yazıyoruz. Daha sonra indirim tamamlanınca terminalimize ,</p>
+
+<pre><code>    cybele project_name
+</code></pre>
+
+<p>yazıyoruz ve Cybele ile projemizi oluşturuyoruz. &ldquo;project_name&rdquo; kısmı sizin projenize vermek istediğiniz ismi yazacağınız kısım.Ben projemin adını &ldquo;yeniDeneme&rdquo; olarak belirledim.Bundan sonraki örneklerde &ldquo;yeniDeneme&rdquo; ismi üzerinden devam edeceğim lütfen dikkat edelim. İlk olarak yapmam gereken ruby versiyonumu kontrol ederek projemdeki &ldquo;.ruby-version&rdquo; dosyasındakiyle aynı mı değil mi bakmaktır.Değilse dosya içine kendi versiyonumuzu yazıyoruz.</p>
+
+<p>Şimdi yapmamız gerekenlerden biri ise kullandığımız derleyicide oluşturduğumuz projeyi açıp <strong>db</strong> dosyasından <strong>migrate</strong> sekmesine ordan da <strong>&ldquo;devise_create_user&rdquo;</strong> ve <strong>&ldquo;devise_crate_admin&rdquo;</strong> dosyalarının içine girerek ,</p>
+
+<pre><code>      t.boolean :is_active
+</code></pre>
+
+<p>satırını ,</p>
+
+<pre><code>      t.boolean :is_active, default: true  
+</code></pre>
+
+<p>olarak değiştirmektir.Unutmayın user ve admin dosyalarının ikisinin de içini değiştiriyoruz.</p>
+
+<p>Sırada ise <strong>config</strong> in altındaki <strong>&ldquo;settings.yml&rdquo;</strong> dosyasına giderek</p>
+
+<pre><code>      basic_auth:
+        username: yeniDeneme
+        password: yeniDeneme
+
+      sidekiq:
+        username: yeniDeneme
+        password: yeniDeneme
+</code></pre>
+
+<p>Kısımlarının bu şekilde olduğundan emin oluyoruz.Bu ayarlar Cybele tool u içindeki gemlerin çalışması için gereklidir. Unutmayın &ldquo;yeniDeneme&rdquo; benim projemin adı sizin ekranınızda sizin projenizin ismi yazılı olacaktır.Burayı da kontrol edip gerekliyse değişiklik yaptıktan sonra terminalimizi tekrar açıyoruz ve cd komutu ile public dosyasına girip şunu ,</p>
+
+<pre><code>       ln -s ../VERSION.txt VERSION.txt
+</code></pre>
+
+<p>yazıyoruz terminale ve tekrar üst dizine geçip terminale</p>
+
+<pre><code>       bundle
+</code></pre>
+
+<p>yazıyoruz.</p>
+
+<p>Şimdi database işlemlerine geçme vakti geldi.Terminalimize ,</p>
+
+<pre><code>       sudo -u postgres psql
+</code></pre>
+
+<p>komutunu yazıyoruz ve şifremizi giriyoruz.(herzamanki bilgisayar şifreniz).Projemize dönerek config dosyası altındaki &ldquo;database.yml&rdquo; yi açıyoruz.</p>
+
+<pre><code>       development: &amp;default
+         adapter: postgresql
+         database: yeniDeneme_development
+         encoding: utf8
+         min_messages: warning
+         pool: 5
+         timeout: 5000
+         host: localhost
+         port: 5432
+</code></pre>
+
+<p>olan kodlara username ve passoword u ekliyoruz.</p>
+
+<pre><code>         development: &amp;default
+           adapter: postgresql
+           database: yeniDeneme_development
+           encoding: utf8
+           min_messages: warning
+           pool: 5
+           timeout: 5000
+           host: localhost
+           port: 5432
+           username: mrk
+           password: mrk
+</code></pre>
+
+<p>Ben username ve password umu &ldquo;mrk&rdquo; olarak belirledim.Bundan sonraki işlemleri ona göre yapacağım lütfen dikkat ediniz.Tekrar terminale geliyoruz.İlk olarak</p>
+
+<pre><code>            CREATE DATABASE ‘yeniDeneme_development’;
+</code></pre>
+
+<p>komutunu yazıyoruz.&ldquo;yeniDeneme_development&rdquo; yazmamın sebebei &ldquo;database.yml&rdquo; dosyasında &ldquo;database: yeniDeneme_development&rdquo; yazmasıdır. Daha sonra ,</p>
+
+<pre><code>            CREATE USER mrk WITH PASSWORD ‘mrk’;
+</code></pre>
+
+<p>yazıyoruz. Sonrasında</p>
+
+<pre><code>            ALTER USER mrk WITH SUPERUSER;
+</code></pre>
+
+<p><strong>veya</strong> dikkat edin lütfen &ldquo;veya&rdquo;</p>
+
+<pre><code>            ALTER USER mrk WITH PASSWORD ‘mrk’;
+</code></pre>
+
+<p>yazarak postgresql işemlerini tamamlıyoruz.Çıkış yapmak için</p>
+
+<pre><code>            \q
+</code></pre>
+
+<p>yazıyoruz.</p>
+
+<p>Şimdi yapmamız gereken şey terminale sırasıyla</p>
+
+<pre><code>            bundle exec rake db:create
+</code></pre>
+
+<p>ve</p>
+
+<pre><code>            bundle exec rake db:migrate
+</code></pre>
+
+<p>komutlarını yazmaktır.</p>
+
+<p>Bu komutları yazdıktan sonra derleyicimizde -ben RubyMine için anlatacağım- View in altından Tool Windows a geliyoruz , Tool Windows un altından Database e tıklıyoruz. Gelen pencerede &ldquo;+&rdquo; simgesine tıklayarak Data Source sekmesinden PostgreSQL i seçiyoruz. Ve ekranı şu şekilde dolduruyoruz. Unutmayın siz sizin kendi verilerinize göre dolduracaksınız.</p>
+
+<p><a href="http://tinypic.com?ref=xqj8sp" target="_blank"><img src="http://i67.tinypic.com/xqj8sp.jpg" border="0" alt="Image and video hosting by TinyPic"></a></p>
+
+<p>Database : &ldquo;database.yml&rdquo; kısmında yazan yeniDeneme.development , user ve passwordu gene kendim &ldquo;database.yml&rdquo; dosyasında kendi oluşturduğum username ve password olan &ldquo;mrk&rdquo; ile doldurup &ldquo;Test Connection&rdquo; butonuna basıyorum ve database ile bağlantımı oluşturuyorum.</p>
+
+<p>Şimdi terminalime</p>
+
+<pre><code>           bundle exec rake dev:seed
+</code></pre>
+
+<p>yazıyorum ve yeni bir terminal açarak aşağıdaki komutla redis server ımı çalıştırıyorum.</p>
+
+<pre><code>           redis-server
+</code></pre>
+
+<p> Cybele ile proje oluşturduğunuzda arka taraftaki işler için redis server ınızın açık olması gerekmektedir.Tekrar eski terminalime geri gelerek</p>
+
+<pre><code>           rails s
+</code></pre>
+
+<p> komutunu çalıştırıp localde projemi çalıştırmış oluyorum ve karşıma şöyle bir ekran geliyor.</p>
+
+<p> <a href="http://tinypic.com?ref=21yasw" target="_blank"><img src="http://i68.tinypic.com/21yasw.png" border="0" alt="Image and video hosting by TinyPic"></a></p>
+
+<p> Evet arkadaşlar bugün sizlere Cybele ile nasıl Rails projesi oluşturulur bahsettim. Bundan sonra projenizi ne şekilde geliştireceğiniz size kalmış. Hepinize mutlu günler/geceler dileyerek yazımı sonlandırıyorum. Hoşçakalın!</p>
+
+<p> <a href="https://github.com/lab2023/cybele">Kaynak</a></p>
+
+
+
+</article>
+
+
+
+                </div>
+
+                
+                <aside class="sidebar col-xs-12 col-md-4 col-lg-4">
+                    <div class="row">
+
+    
+        <section class="hire--aside col-xs-12 col-sm-10 col-md-12">
+            
+    
+
+
+
+    
+
+
+
+
+
+        </section>
+    
+
+    
+<section class="social col-xs-12 col-sm-6 col-md-12">
+    <h1>
+        Follow me!
+    </h1>
+    <ul class="unstyled">
+        
+        
+        
+        <li><a class="facebook" href="//facebook.com/murat.kurtul"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+        
+        
+        
+        
+        <li><a class="linkedin" href="//linkedin.com/in/murat-rahmi-kurtul-64b175108"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+        
+        
+        
+        <li><a class="twitter" href="//twitter.com/mrahmikurtul"><i class="fa fa-twitter"></i> Twitter</a></li>
+        
+    </ul>
+</section>
+
+
+
+    <section id="recent-posts" class="col-xs-12 col-sm-6 col-md-12">
+    <h1>Recent Posts</h1>
+    <ul class="divided">
+        
+        <li class="post">
+            <a href="/blog/2016/08/11/lyk2016-ilk-hafta/">LYK2016 ilk hafta</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2016/08/02/cybele-ile-proje/">Ubuntuda Cybele ile Proje Oluşturma</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2016/08/01/workshop-seruveni-ikinci-gun/">Workshop Serüveni İkinci Gün</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2016/07/31/workshop-ilk-gun/">Workshop Serüveni İlk Gün</a>
+        </li>
+        
+    </ul>
+</section>
+
+<section id="github-repos" class="col-xs-12 col-sm-6 col-md-12">
+    <h1>
+        GitHub Repos
+        
+        <small class="pull-right">
+            <a class="btn" href="//github.com/muratrahmikurtul" title="@muratrahmikurtul on GitHub" target="_blank">
+                <i class="fa fa-external-link"></i>
+            </a>
+        </small>
+        
+    </h1>
+    <ul id="gh_repos" class="divided">
+        <li class="loading">
+            <i class="fa fa-spinner fa-spin"></i>
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+</div>
+
+                </aside>
+                
+            </div>
+        </div>
+
+        
+
+    
+    
+
+
+
+
+<footer class="footer">
+    <div class="row middle-xs">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="footer__copyright">
+    All content copyright Murat Rahmi KURTUL.<br>
+    Code under <a href="//github.com/coogie/oscailte/blob/master/README.md">MIT Licence</a>.
+</p>
+
+        </div>
+        
+        
+    </div>
+</footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+<script defer src="/javascripts/octopress.js"></script>
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'muratrahmikurtul',
+            count: 4,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+</script>
+<script src="/javascripts/github.js"></script>
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
