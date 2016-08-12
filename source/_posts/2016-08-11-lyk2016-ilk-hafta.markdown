@@ -17,27 +17,27 @@ Daha sonra gük içinde sıradaki dersimizde bize yardımcı olacak eğitmenimiz
 <img src="http://i66.tinypic.com/t9h8h0.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 Ertesi gün de bize ders veren eğitimcilerimiz arasında [Leyla Hanım](https://twitter.com/leylakapi?lang=tr) da vardı. Kendisi bize front end ile ilgili bir değitim verdi.
-<img src="http://i66.tinypic.com/235f69.jpg" border="0" alt="Image and video hosting by TinyPic">
+<img src="http://i65.tinypic.com/acgb6c.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 Bir diğer eğitmenimiz ise [İsmail Bey](https://twitter.com/isoakbudak?lang=tr) di. O da bize rails projesindeki dizinlerden bahsetti.
-<img src="http://i64.tinypic.com/2qisebl.jpg" border="0" alt="Image and video hosting by TinyPic">
+<img src="http://i68.tinypic.com/30jpmav.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 İlk hafta gerçekten çok yoğun tempolu güzel bir eğitim süreci geçirdik. Eğtimler arasında [Kader Hanım](https://twitter.com/sucuklukfasulye) ın verdiği git,git kurulumu,git ayarları dersi de vardı.
-<img src="http://i68.tinypic.com/zu5bmh.jpg" border="0" alt="Image and video hosting by TinyPic">
+<img src="http://i68.tinypic.com/2la7imo.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 Bize bir projede takım olarak nasıl çalışılır , branch ler üzerinden proje nasıl yönetilir. Bunlar hakkında bilgi verdi. Derste aklımda kalan ve dersi tam anlamıyla özetleyen söz ise Tayfun Hocadan gelmişti "Branch ler çalışanların birbirlerini beklemelerini ve birbirlerinin ayaklarına basmalarını engeller."
 
 Bu 5 Hocamız verdikleri güzel derslerden sonra malesef aramızdan ayrılmak zorunda kaldılar. Onlara burdan da tekrar teşekkürlerimi iletiyorum.
 
 Bizle devam eden hocalarımızdan [Muhammet Bey](https://twitter.com/m_dilmac)ise bize linux terminal kullanımı ile ilgili bir ders verdi.
-<img src="http://i68.tinypic.com/2a4rac2.jpg" border="0" alt="Image and video hosting by TinyPic">
+<img src="http://i68.tinypic.com/15wmf0k.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 Hocamızın verdiği dersten notlara değinecek olursak cd komutu ile dosya dizinine gitmek , cd .. komutu ile üst dizine geçmek ,cat komutu ile bir dosyanın icerigini göstermek. mkdir komutu ile dizin oluştulması ,pwd komutu ile bulunduğun dizinin gösterilmesi gibi bilgilerdir.
 
 Giriş dersleri bittikten sonra , nihayet rails projemize başlayabilcektik. Bu projede bize yardımcı olacak eğitmenlerimiz ise [Mehmet Bey](https://twitter.com/beydogan_) ve [Saygın Bey](https://twitter.com/sayginburak) di.
 
 Mehmet Hocamız ile bir proje sınıfta , bir projeyi ise kendimiz ödev olarak paralel bir şekilde yapacağız.
-<img src="http://i68.tinypic.com/2j61oq8.jpg" border="0" alt="Image and video hosting by TinyPic">
+<img src="http://i67.tinypic.com/vwxxcl.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 Kendisi ile başladığımız proje bir "idea board" projesi. Şu an projede oluşturulan fikirleri listeleme aşamasındayız. Bunun için örnek kod göstericek olursak.
 
@@ -55,9 +55,14 @@ Kendisi ile başladığımız proje bir "idea board" projesi. Şu an projede olu
 
 Ee 15 gün boyunca sürekli ders ders olmaz tabi di mi? Biz de izin günümüz olan perşembe günü sınıfça toplanıp bir şeyler yapmaya karar verdik. Sabah birlikte bir kahvaltı ordan da Gölcük'e geziye gittik. Yalnız az sonra fotoğrafını da göreceğiniz yer Abant değil arkadaşlar. "Gölcük". Herkeste nedense orasının "Abant" olduğuna dair bir kanı var ama orası "Gölcük" lütfen dikkat edelim :D. Sabah 10:00 sularında kahvaltımızı yapmak üzere Pipo isimli bir mekanda toplandık. Kahvaltımızı yaptık sohbetimizi ettik bir de üstüne güzel bir nargile içtik :)
 
-<img src="http://i66.tinypic.com/35leqtg.jpg" border="0" alt="Image and video hosting by TinyPic">
+Kahvaltı
+<img src="http://i68.tinypic.com/208uzys.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 Karnımızı doyurduktan sonra artık Gölcük için yola koyulma vakti gelmişti. Otobüsün ufağı minibüsün büyüğü sanırım midibüs deniyor , onla Gölcük'e yola cıktık. Gölcük şehir merkezine 12 km yani oldukça yakın. Gölcük , gerçekten de o resimlerde gördüğünüz gibi harika bir yer. Gelip görmenizi tavsiye ederim. Sınıfça bol bol fotoğraf çektirip , eğlendikten sonra Gölcük gezimizinde sonuna geldik.
+
+Gölcük
+<img src="http://i64.tinypic.com/2r224bo.jpg" border="0" alt="Image and video hosting by TinyPic">
+
 
 <img src="http://i66.tinypic.com/28ck8xs.jpg" border="0" alt="Image and video hosting by TinyPic">
 
