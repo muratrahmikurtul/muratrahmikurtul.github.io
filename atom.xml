@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[mRk's Blog]]></title>
+    <link href="http://muratrahmikurtul.github.io/atom.xml" rel="self"/>
+    <link href="http://muratrahmikurtul.github.io/"/>
+    <updated>2018-11-28T12:10:28+01:00</updated>
+    <id>http://muratrahmikurtul.github.io/</id>
+    <author>
+        <name><![CDATA[Murat Rahmi KURTUL]]></name>
+        
+    </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[LYK2016 ilk hafta]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/08/11/lyk2016-ilk-hafta/"/>
+        <updated>2016-08-11T15:31:14+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/08/11/lyk2016-ilk-hafta</id>
+        <content type="html"><![CDATA[<p>Tekrardan merhabalar herkese. Bu yazımda sizlere Linux yaz kampında ilk hafta nasıl geçti neler oldu neler bitti onları anlatacağım.Umarım beğenirsiniz.</p>
+
+<p>4 Ağustos gecesi Bolu'ya gitmek üzere Denizli'den yola çıktık. 5 Ağustos sabah saatlerinde Bolu &lsquo;ya kampın yapılacağı yer olan Abant İzzet Baysal Üniversitesi'ne vardık. İlk olarak kampa kaydımızı yaptırdıktan sonra kalacağımız yer olan kyk da da kayıt işlemlerini hallettik. 13:30 daki toplantıya katılıp kampın gidişatı hakkında bilgiler aldık ve sınıflarımıza gittik. Ben Linux yaz kampında <code>Ruby on Rails</code> kursuna katıldım. İlk gün kurulum yapan öğrenciler ben de dahil serbest bırakıldık ve kalacağımız yerlere yollandık. Kalan arkadaşlar gerekli kurulumları yaptılar. Yurda geldim , -bu arada kyk diyip geçmeyin gerçekten gayet konforlu bir yurt- yolculuğun verdiği yorgunluk sebebiyle hemen uyudum. Sabah 8 sularında kalktım dersler, 09:30 - 21:30 arası olduğundan beni gayet yoğun bir gün bekliyordu. Kahvaltımı kampüste yapıp dersi alacağımız sınıfa geçtim. Derslere Ruby ile başlayacaktık. Bu derste bize yardımcı olacak eğitmenimiz <a href="https://twitter.com/ugorur">Umurcan Bey</a>'di. Kendisi bize Ruby temelleri ile ilgili ders verdi. Dersle ilgili kısaca notlardan bahsedecek olursak <code>= !</code> gibi ifadeler metot isimlerinde kullanılabilir. Parantez kullanmaya genelde gerek yoktur. Son satırını her zaman <code>return</code> eder , o yüzden <code>return</code> yazmaya gerek yoktur. <code>!</code> değişkenin değerini değiştirir.( <code>a=umur;a.reverse;rumu</code> döndürür ama <code>a</code> hala <code>umur</code> dur, sonunda <code>!</code> koyarak <code>a.reverse!</code> yazarsan <code>a</code> artık <code>rumu</code> dur.). <code>?</code> varsa <code>true</code> veya <code>false</code> döndürür.Sabit isimleri büyük harfle baslar <code>class</code>, <code>module</code> gibi, yerel değişkenler kücük harf veya <code>_</code> ile başlar. <code>Global</code> değişkenler <code>$</code> ile degiskenler <code>@</code> ve <code>@@</code> ile , <code>@@</code> sınıfın kendi icindeki degiskendir. Baska dilde console <code>a</code> girip <code>ruby -e</code> yazarak ruby kodlarını calıstırabilirsiniz. <code>(ruby-doc.org)</code>, <code>BigDecimal</code> kütüphanesi <code>Float</code> veri tipinde yuvarlama hatalarını önler. <code>(BigDecimal("0.33")*10).to_f</code> , örneğin <code>sayı1 = -8</code> , <code>sayi1.abs</code> derseniz mutlak deger yani <code>8</code> döner. <code>0b</code> binary <code>0x</code> hexadecimal olarak sayıları yazmaya yarar (elektronik aletler). Metin birleştirme <code>+</code> ve <code>&lt;&lt;</code> ile olur. <code>puts "#{'akademik'.capitalize} #{'bilişim'.upcase}</code> ile icine kodda gömebilirsiniz. <code>unicode_utils</code> gem 'i ile türkçe karakter sorununu cozebilirsiniz. <code>Array</code> 'ler ekrana <code>inspect</code> ile yazdırılır. Diziler <code>+</code> ile toplanır <code>&lt;&lt;</code> ile yeni eleman eklenir. <code>.flatten</code> kodu dizi icindeki dizileri tek dizi haline getirir. Ruby 'de her şey objedir. Primitive veri tipi yoktur. <code>self</code> anahtar kelimesi o anki <code>class</code> 'ı işaret eder. Notlar da yazım hataları varsa kusura bakmayın direk buraya attım ders esnasındaki aldığım notları, düzeltme fırsatım olmadı malesef. Bu güzel eğitimin ardından ara verdik.</p>
+
+<p>Daha sonra gük içinde sıradaki dersimizde bize yardımcı olacak eğitmenimiz <a href="https://twitter.com/toziserikan?lang=tr">Tayfun Bey</a> &lsquo;di. Kendisiyle çok verimli geçen bir ders işledik. Ders notlarını önceki yazılarımda bulabilirsiniz.</p>
+
+<p><img src="http://i66.tinypic.com/t9h8h0.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Ertesi gün de bize ders veren eğitimcilerimiz arasında <a href="https://twitter.com/leylakapi?lang=tr">Leyla Hanım</a> &lsquo;da vardı. Kendisi bize front end ile ilgili bir eğitim verdi.
+<img src="http://i65.tinypic.com/acgb6c.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Bir diğer eğitmenimiz ise <a href="https://twitter.com/isoakbudak?lang=tr">İsmail Bey</a> &lsquo;di. O da bize rails projesindeki dizinlerden bahsetti.
+<img src="http://i68.tinypic.com/30jpmav.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>İlk hafta gerçekten çok yoğun tempolu güzel bir eğitim süreci geçirdik. Eğitimler arasında <a href="https://twitter.com/sucuklukfasulye">Kader Hanım</a> &lsquo;ın verdiği git, git kurulumu, git ayarları dersi de vardı.
+<img src="http://i68.tinypic.com/2la7imo.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Bize bir projede, takım olarak nasıl çalışılır , branch &lsquo;ler üzerinden proje nasıl yönetilir, bunlar hakkında bilgi verdi. Derste aklımda kalan ve dersi tam anlamıyla özetleyen söz ise <a href="https://twitter.com/toziserikan">Tayfun Hocadan</a> gelmişti; &ldquo;Branch 'ler çalışanların birbirlerini beklemelerini ve birbirlerinin ayaklarına basmalarını engeller.&rdquo;</p>
+
+<p>Bu 5 Hocamız verdikleri güzel derslerden sonra malesef aramızdan ayrılmak zorunda kaldılar. Onlara burdan da tekrar teşekkürlerimi iletiyorum.</p>
+
+<p>Bizle devam eden hocalarımızdan <a href="https://twitter.com/m_dilmac">Muhammet Bey</a> ise bize <code>linux terminal</code> kullanımı ile ilgili bir ders verdi.
+<img src="http://i68.tinypic.com/15wmf0k.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Hocamızın verdiği dersten notlara değinecek olursak <code>cd</code> komutu ile dosya dizinine gitmek, <code>cd ..</code> komutu ile üst dizine geçmek, <code>cat</code> komutu ile bir dosyanın icerigini göstermek. <code>mkdir</code> komutu ile dizin oluştulması, <code>pwd</code> komutu ile bulunduğun dizinin gösterilmesi gibi bilgilerdir.</p>
+
+<p>Giriş dersleri bittikten sonra, nihayet rails projemize başlayabilcektik. Bu projede bize yardımcı olacak eğitmenlerimiz ise <a href="https://twitter.com/beydogan_">Mehmet Bey</a> ve <a href="https://twitter.com/sayginburak">Saygın Bey</a> &lsquo;di.</p>
+
+<p>Mehmet Hocamız ile bir proje sınıfta, bir projeyi ise kendimiz ödev olarak paralel bir şekilde yapacağız.
+<img src="http://i67.tinypic.com/vwxxcl.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Kendisi ile başladığımız proje bir <code>idea board</code> projesi. Şu an projede oluşturulan fikirleri listeleme aşamasındayız. Bunun için örnek kod göstericek olursak.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>   <span class="no">Listing</span> <span class="no">Ideas</span> <span class="o">&lt;</span><span class="n">br</span> <span class="sr">/&gt;</span>
+</span><span class='line'><span class="sr">   </span>
+</span><span class='line'><span class="sr">     &lt;%= @ideas.count %&gt;&lt;br /</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>     <span class="o">&lt;</span><span class="sx">% @ideas.each </span><span class="k">do</span> <span class="o">|</span><span class="n">ideas</span><span class="o">|</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">          ID: &lt;%= ideas.id%&gt;</span>  <span class="ss">Title</span><span class="p">:</span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;&lt;%=idea_path(ideas.id)%&gt;&quot;</span><span class="o">&gt;&lt;</span><span class="sx">%= ideas.title%&gt;&lt;/a&gt;---Desc:&lt;%=</span> <span class="n">ideas</span><span class="o">.</span><span class="n">description</span><span class="sx">%&gt;&lt;br /&gt;</span>
+</span><span class='line'>     <span class="o">&lt;%</span><span class="k">end</span><span class="o">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>İlk haftadaki genel izlenimlerim, eğer linux yaz kampına katılsam mı diye düşünüyorsanız bunu mutlaka gerçekleştirin. Buradaki herkes gönüllülük esasına dayanarak çalışmakta. İstediğiniz her soruya -nekadar saçma olursa olsun- bir cevap buluyorsunuz. Sıkılmadan ve usanmadan sadece size yardımcı olabilmek için eğitimler veriliyor. Emeği geçen herkese tekrar teşekkür ederiz.</p>
+
+<p>Ee 15 gün boyunca sürekli ders ders olmaz tabi di mi? Biz de izin günümüz olan perşembe günü sınıfça toplanıp bir şeyler yapmaya karar verdik. Sabah birlikte bir kahvaltı ordan da Gölcük &lsquo;e geziye gittik. Yalnız az sonra fotoğrafını da göreceğiniz yer Abant değil arkadaşlar, &ldquo;Gölcük&rdquo;. Herkeste nedense orasının &ldquo;Abant&rdquo; olduğuna dair bir kanı var ama orası &ldquo;Gölcük&rdquo; lütfen dikkat edelim :D. Sabah 10:00 sularında kahvaltımızı yapmak üzere Pipo isimli bir mekanda toplandık. Kahvaltımızı yaptık sohbetimizi ettik bir de üstüne güzel bir nargile içtik :)</p>
+
+<p>Kahvaltı
+<img src="http://i68.tinypic.com/208uzys.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Karnımızı doyurduktan sonra artık Gölcük için yola koyulma vakti gelmişti. Otobüsün ufağı minibüsün büyüğü sanırım midibüs deniyor, onla Gölcük &lsquo;e yola cıktık. Gölcük şehir merkezine 12 km yani oldukça yakın. Gölcük, gerçekten de o resimlerde gördüğünüz gibi harika bir yer. Gelip görmenizi tavsiye ederim. Sınıfça bol bol fotoğraf çektirip, eğlendikten sonra Gölcük gezimizinde sonuna geldik.</p>
+
+<p>Gölcük</p>
+
+<p><img src="http://i66.tinypic.com/28ck8xs.jpg" border="0" alt="Image and video hosting by TinyPic"></p>
+
+<p>Evet arkadaşlar ilk hafta izlenimlerim bu şekilde. Umarım eğlendiğiniz, linux yaz kampı hakkında ufak ta olsa fikir sahibi olduğunuz bir yazı olmuştur.Sağlıklı beslenmeyi unutmuyoruz! :).Hoşçakalın</p>
+]]></content>
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Ubuntuda Cybele ile Proje Oluşturma]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/08/02/cybele-ile-proje/"/>
+        <updated>2016-08-02T15:19:21+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/08/02/cybele-ile-proje</id>
+        <content type="html"><![CDATA[<p>Evet arkadaşlar tekrar merhaba.Bugün sizlere ubuntuda Cybele tool u ile nasıl Ruby on Rails projesi oluşturabilirsiniz onu anlatacağım.Her şeyden önce Cybele yi indirip kullanabilmeniz için şu anlık gerekli olan en düşük Ruby versiyonu 2.3 , Rails versiyonu ise 4.2 dir.Eğer versiyonlarınız bunlardan eski ise lütfen güncelleyiniz.</p>
+
+<p>Öncelikle Cybele gemini indirmemiz gerekiyor. Bunun için terminalimize ,</p>
+
+<pre><code>    gem install cybele
+</code></pre>
+
+<p>yazıyoruz. Daha sonra indirim tamamlanınca terminalimize ,</p>
+
+<pre><code>    cybele project_name
+</code></pre>
+
+<p>yazıyoruz ve Cybele ile projemizi oluşturuyoruz. &ldquo;project_name&rdquo; kısmı sizin projenize vermek istediğiniz ismi yazacağınız kısım.Ben projemin adını &ldquo;yeniDeneme&rdquo; olarak belirledim.Bundan sonraki örneklerde &ldquo;yeniDeneme&rdquo; ismi üzerinden devam edeceğim lütfen dikkat edelim. İlk olarak yapmam gereken ruby versiyonumu kontrol ederek projemdeki &ldquo;.ruby-version&rdquo; dosyasındakiyle aynı mı değil mi bakmaktır.Değilse dosya içine kendi versiyonumuzu yazıyoruz.</p>
+
+<p>Şimdi yapmamız gerekenlerden biri ise kullandığımız derleyicide oluşturduğumuz projeyi açıp <strong>db</strong> dosyasından <strong>migrate</strong> sekmesine ordan da <strong>&ldquo;devise_create_user&rdquo;</strong> ve <strong>&ldquo;devise_crate_admin&rdquo;</strong> dosyalarının içine girerek ,</p>
+
+<pre><code>      t.boolean :is_active
+</code></pre>
+
+<p>satırını ,</p>
+
+<pre><code>      t.boolean :is_active, default: true  
+</code></pre>
+
+<p>olarak değiştirmektir.Unutmayın user ve admin dosyalarının ikisinin de içini değiştiriyoruz.</p>
+
+<p>Sırada ise <strong>config</strong> in altındaki <strong>&ldquo;settings.yml&rdquo;</strong> dosyasına giderek</p>
+
+<pre><code>      basic_auth:
+        username: yeniDeneme
+        password: yeniDeneme
+
+      sidekiq:
+        username: yeniDeneme
+        password: yeniDeneme
+</code></pre>
+
+<p>Kısımlarının bu şekilde olduğundan emin oluyoruz.Bu ayarlar Cybele tool u içindeki gemlerin çalışması için gereklidir. Unutmayın &ldquo;yeniDeneme&rdquo; benim projemin adı sizin ekranınızda sizin projenizin ismi yazılı olacaktır.Burayı da kontrol edip gerekliyse değişiklik yaptıktan sonra terminalimizi tekrar açıyoruz ve cd komutu ile public dosyasına girip şunu ,</p>
+
+<pre><code>       ln -s ../VERSION.txt VERSION.txt
+</code></pre>
+
+<p>yazıyoruz terminale ve tekrar üst dizine geçip terminale</p>
+
+<pre><code>       bundle
+</code></pre>
+
+<p>yazıyoruz.</p>
+
+<p>Şimdi database işlemlerine geçme vakti geldi.Terminalimize ,</p>
+
+<pre><code>       sudo -u postgres psql
+</code></pre>
+
+<p>komutunu yazıyoruz ve şifremizi giriyoruz.(herzamanki bilgisayar şifreniz).Projemize dönerek config dosyası altındaki &ldquo;database.yml&rdquo; yi açıyoruz.</p>
+
+<pre><code>       development: &amp;default
+         adapter: postgresql
+         database: yeniDeneme_development
+         encoding: utf8
+         min_messages: warning
+         pool: 5
+         timeout: 5000
+         host: localhost
+         port: 5432
+</code></pre>
+
+<p>olan kodlara username ve passoword u ekliyoruz.</p>
+
+<pre><code>         development: &amp;default
+           adapter: postgresql
+           database: yeniDeneme_development
+           encoding: utf8
+           min_messages: warning
+           pool: 5
+           timeout: 5000
+           host: localhost
+           port: 5432
+           username: mrk
+           password: mrk
+</code></pre>
+
+<p>Ben username ve password umu &ldquo;mrk&rdquo; olarak belirledim.Bundan sonraki işlemleri ona göre yapacağım lütfen dikkat ediniz.Tekrar terminale geliyoruz.İlk olarak</p>
+
+<pre><code>            CREATE DATABASE ‘yeniDeneme_development’;
+</code></pre>
+
+<p>komutunu yazıyoruz.&ldquo;yeniDeneme_development&rdquo; yazmamın sebebei &ldquo;database.yml&rdquo; dosyasında &ldquo;database: yeniDeneme_development&rdquo; yazmasıdır. Daha sonra ,</p>
+
+<pre><code>            CREATE USER mrk WITH PASSWORD ‘mrk’;
+</code></pre>
+
+<p>yazıyoruz. Sonrasında</p>
+
+<pre><code>            ALTER USER mrk WITH SUPERUSER;
+</code></pre>
+
+<p><strong>veya</strong> dikkat edin lütfen &ldquo;veya&rdquo;</p>
+
+<pre><code>            ALTER USER mrk WITH PASSWORD ‘mrk’;
+</code></pre>
+
+<p>yazarak postgresql işemlerini tamamlıyoruz.Çıkış yapmak için</p>
+
+<pre><code>            \q
+</code></pre>
+
+<p>yazıyoruz.</p>
+
+<p>Şimdi yapmamız gereken şey terminale sırasıyla</p>
+
+<pre><code>            bundle exec rake db:create
+</code></pre>
+
+<p>ve</p>
+
+<pre><code>            bundle exec rake db:migrate
+</code></pre>
+
+<p>komutlarını yazmaktır.</p>
+
+<p>Bu komutları yazdıktan sonra derleyicimizde -ben RubyMine için anlatacağım- View in altından Tool Windows a geliyoruz , Tool Windows un altından Database e tıklıyoruz. Gelen pencerede &ldquo;+&rdquo; simgesine tıklayarak Data Source sekmesinden PostgreSQL i seçiyoruz. Ve ekranı şu şekilde dolduruyoruz. Unutmayın siz sizin kendi verilerinize göre dolduracaksınız.</p>
+
+<p><a href="http://tinypic.com?ref=xqj8sp" target="_blank"><img src="http://i67.tinypic.com/xqj8sp.jpg" border="0" alt="Image and video hosting by TinyPic"></a></p>
+
+<p>Database : &ldquo;database.yml&rdquo; kısmında yazan yeniDeneme.development , user ve passwordu gene kendim &ldquo;database.yml&rdquo; dosyasında kendi oluşturduğum username ve password olan &ldquo;mrk&rdquo; ile doldurup &ldquo;Test Connection&rdquo; butonuna basıyorum ve database ile bağlantımı oluşturuyorum.</p>
+
+<p>Şimdi terminalime</p>
+
+<pre><code>           bundle exec rake dev:seed
+</code></pre>
+
+<p>yazıyorum ve yeni bir terminal açarak aşağıdaki komutla redis server ımı çalıştırıyorum.</p>
+
+<pre><code>           redis-server
+</code></pre>
+
+<p> Cybele ile proje oluşturduğunuzda arka taraftaki işler için redis server ınızın açık olması gerekmektedir.Tekrar eski terminalime geri gelerek</p>
+
+<pre><code>           rails s
+</code></pre>
+
+<p> komutunu çalıştırıp localde projemi çalıştırmış oluyorum ve karşıma şöyle bir ekran geliyor.</p>
+
+<p> <a href="http://tinypic.com?ref=21yasw" target="_blank"><img src="http://i68.tinypic.com/21yasw.png" border="0" alt="Image and video hosting by TinyPic"></a></p>
+
+<p> Evet arkadaşlar bugün sizlere Cybele ile nasıl Rails projesi oluşturulur bahsettim. Bundan sonra projenizi ne şekilde geliştireceğiniz size kalmış. Hepinize mutlu günler/geceler dileyerek yazımı sonlandırıyorum. Hoşçakalın!</p>
+
+<p> <a href="https://github.com/lab2023/cybele">Kaynak</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Workshop Serüveni İkinci Gün]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun/"/>
+        <updated>2016-08-01T14:20:04+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/08/01/workshop-seruveni-ikinci-gun</id>
+        <content type="html"><![CDATA[<p>Tekrar merhaba arkadaşlar bugün ikinci günü anlatacağım.</p>
+
+<h2>Öğleden Önce</h2>
+
+<p>Önceki gün olduğu gibi sabah tam 09:00 da eğitimin yapılacağı yerde yerimi almıştım. Öğleden önce kaldığımız yerden 11:30 a kadar <a href="https://twitter.com/isoakbudak?lang=tr">İsmail Bey</a>le devam edecektik.Daha sonra <a href="https://twitter.com/leylakapi?lang=tr">Leyla Hanım</a> öğle arasına kadar bize front end , yani temel seviye html,css,haml,sass,bootstrap eğitimi verecek öğleden sonra tekrar İsamil Bey ile devam edip workshop ı bitirecektik.</p>
+
+<p>09:00 itibariyle başladık. Fakat bazı arkadaşlar localhost ta çalıştırdıkları server larını kapamadan bilgisayarlarını uykuya aldıkları için bazı sorunlar yaşıyor &ldquo;rails s&rdquo; komutunu çalıştıramıyorlardı.Bu hatanın çözümü için İsmail Hocamız localhost ta port değiştirmeyi öneerdi.</p>
+
+<ul>
+<li><strong>Port Değiştirme</strong> ; terminal e</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>   rails s --port <span class="o">=</span> 3001
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>yazılarak 3000 olan portu 3001 yapıp hatayı gidermiş olduk ve &ldquo;rails s&rdquo; komutunu sorunsuz çalıştırdık.</p>
+
+<p>Bu hatayı da giderdikten sonra Cybele tool unu kullanarak kendi basit blog uygulamamızı oluşturduk.</p>
+
+<pre><code>    cybele project_name
+</code></pre>
+
+<p>Uygulama üzerindeki birkaç basit hatayı düzelttik.Örneğin profiles_controller.rb dosyasının adını profile_controller.rb olarak güncelledik.Projemizdeki controller ve modelleri inceledik.Yönetici olan kişiye hoşgeldin maili göndermek yapmamız gerekenler anlatıldı.Models altındaki admin.rb dosyasına</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>def send_welcome
+</span><span class='line'>    AdminMailer.welcome<span class="o">(</span>self.id<span class="o">)</span>.deliver_later!
+</span><span class='line'>end
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kodlarını ekledikten sonra controllerdaki admin_mailer.rb dosyasına giderek</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>def welcome admin_id
+</span><span class='line'>    @admin      <span class="o">=</span> Admin.find admin_id
+</span><span class='line'>    @subject    <span class="o">=</span> t<span class="o">(</span><span class="s1">&#39;email.admin.welcome.title&#39;</span><span class="o">)</span>
+</span><span class='line'>    mail<span class="o">(</span>to: @admin.email, subject: @subject<span class="o">)</span>
+</span><span class='line'>end
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kodlarını ekledik. Ama yönetici olan kişiye hoşgeldin maili atabilmemiz için bir şey daha yapmamız gerekiyordu. O da tekrar admin.rb dosyasına gidip</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> after_commit :send_login_info, on: :create
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>satırına</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> after_commit :send_login_info, :send_welcome, on: :create
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>eklemekti.</p>
+
+<p>Gönderdiğimiz mailin içeriğini de View altındaki admin_mailer dosyası içinde oluşturduğumuz welcome.html.haml dosyası içerisinde yazdık.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>%h2<span class="o">=</span> t<span class="o">(</span><span class="s1">&#39;email.hello&#39;</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>%p
+</span><span class='line'>    <span class="o">=</span> @admin.email
+</span><span class='line'>    İyi günler dileriz.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Bazı arkadaşlarımız mail yollamada hata aldılar. Bunun sebebi ise şuydu , controller da oluşturduğunuz action ın adı neyse -benim örneğimde welcome- view daki dosyanızın adı da o olmak zorundaydı.</p>
+
+<p>Bu arada bu maili yolladık ta nasıl yolladık?? Gibi sorular oluşmuş olabilir kafalarda. Bunların cevaplarını öğleden sonra kısmında anlatacağım.</p>
+
+<p>Bunu da yaptıktan sonra saat 11:30 olmuş ve ara vakti gelmişti..</p>
+
+<h4>Front End</h4>
+
+<p>Aradan sonra <a href="https://twitter.com/leylakapi?lang=tr">Leyla Hanım</a> ile front end e başlamıştık. Benim için uygulama geliştirmenin en zevkli kısmı front end kısmıydı.Ruby on Rails felsefesinden ve temiz kod yazma isteğinden ötürü html.erb yerine haml, css yerine de sass kullanıldığını , sass ın getirdiği kolaylıkları (kalıtım yapısı , extend ve mixin özellikleri) bize güzel bir şekilde açıklayarak artık uygulamaya geçmemizi istedi. Haml , navbar değiştirme , button ekleme css , sass ve son olarak compass a değinerek Leyla Hanım eğitimi bitirecekti.</p>
+
+<p>Bu arada html kodlarınızı haml a çevirmek için ; <a href="https://html2haml.herokuapp.com/">Bu Linki</a> kullanabilirsiniz.</p>
+
+<p>Css kodlarınızı Sass a çevirmek için ise ; <a href="http://css2sass.herokuapp.com/">Bu Linki</a> kullanabilirsiniz.</p>
+
+<p>Leyla Hanım bizden bir button eklememizi buttonun içinde hello yazmasını buttonun kırmızı olmasını ve yazının da beyaz olmasını istemişti.Ben tabiki hemen sözde sivri zeka olarak bootstrap ile danger button kullanarak dediğini yapmıştım.Fakat Leyla Hanım kontrolden sonra bootstrap ile istemediğini css ile yapmamız gerektiğini söyleyerek yaptığım çakallığı ve &ldquo;2 saniyede bitirmiş olan öğrenci&rdquo; havamı yerle bir etmişti :). Her neyse daha sonra aşağıdaki kodlarla üye ol ve giriş yap buttonlarını navbara ekleme işlemi yaptık.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>  %li
+</span><span class='line'>     <span class="o">=</span>link_to  new_user_session_path <span class="k">do</span>
+</span><span class='line'>     %i.fa.fa-sign-in<span class="o">{</span><span class="s2">&quot;aria-hidden&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;true&quot;</span><span class="o">}</span>
+</span><span class='line'>     Giriş yap
+</span><span class='line'>  %li
+</span><span class='line'>     <span class="o">=</span>link_to new_user_registration_path <span class="k">do</span>
+</span><span class='line'>     %i.fa.fa-user-plus<span class="o">{</span><span class="s2">&quot;aria-hidden&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;true&quot;</span><span class="o">}</span>
+</span><span class='line'>     Üye ol
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Son olarak compass ile button kırpma gibi işlemleri kolayca yapabildiğimizi görüp Leyla Hanım ile olan eğitimimizi tamamladık.</p>
+
+<p>Burası HAML kısmı</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#border-radius.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with all corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-top-left.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only top left corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-top-right.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only top right corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-bottom-left.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only bottom left corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-bottom-right.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with only bottom right corner rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-top.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with top corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-bottom.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with bottom corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-left.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with left corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-right.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with right corners rounded
+</span><span class='line'>
+</span><span class='line'><span class="c">#border-radius-combo.border-radius-example</span>
+</span><span class='line'>  %p
+</span><span class='line'>    Box with different roundings <span class="k">for</span> top/bottom and left/right
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Burası SASS kısmı</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> @import compass/css3
+</span><span class='line'>
+</span><span class='line'> @import compass/utilities
+</span><span class='line'>
+</span><span class='line'> <span class="c">#demo</span>
+</span><span class='line'>   +clearfix
+</span><span class='line'>
+</span><span class='line'> .border-radius-example
+</span><span class='line'>      width: 125px
+</span><span class='line'>      height: 125px
+</span><span class='line'>      background: red
+</span><span class='line'>      margin: 20px
+</span><span class='line'>      float: left
+</span><span class='line'>      padding: 5px
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius</span>
+</span><span class='line'>      +border-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-top-left</span>
+</span><span class='line'>      +border-top-left-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-top-right</span>
+</span><span class='line'>      +border-top-right-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-bottom-left</span>
+</span><span class='line'>      +border-bottom-left-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-bottom-right</span>
+</span><span class='line'>      +border-bottom-right-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-top</span>
+</span><span class='line'>      +border-top-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-bottom</span>
+</span><span class='line'>      +border-bottom-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-left</span>
+</span><span class='line'>      +border-left-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-right</span>
+</span><span class='line'>      +border-right-radius<span class="o">(</span>25px<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#border-radius-combo</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>top, left, 40px<span class="o">)</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>top, right, 5px<span class="o">)</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>bottom, left, 15px<span class="o">)</span>
+</span><span class='line'>      +border-corner-radius<span class="o">(</span>bottom, right, 30px<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Öğleden Sonra</h2>
+
+<p>Eğitimin en yorucu kısmı 2.gün öğleden sonrasıydı. Rollbar , sidekiq , sendgrid gibi konuları işleyecek ve bloğumuzu heroku ya deploy edecektik.Bu arada heroku deploy olayını ileriki yazılarımın birinde ayrıntılı bir şekilde anlatacağım.Bu yazıda ayrıntılı yer vereceğim şey ise sendgrid olacak.</p>
+
+<ul>
+<li><strong>Rollbar</strong> anladığım kadarı uygulamanızda oluşan hataları görüntülüyor ve rapor veriyor bu sayede de analiz edip çözmeyi sağlıyor.</li>
+<li><strong>Sidekiq</strong> Ruby için verimli arkaplan job processing i.</li>
+<li><strong>Sendgrid</strong> ise bahsettiğim mail yollama işlerini üzerinden yaptığımız yardımcı bir platform.</li>
+</ul>
+
+
+<p>Sendgrid e üye oluyoruz. Yalnız üye olurken gerçek bilgilerinizi vermenizi öneririm çünkü bir süzgeçten geçiriyolar.Üye olduktan bir süre sonra üyeliğimiz onaylanıyor ve işlemlerimize geçebiliyoruz. <strong>Settings</strong> e gelip <strong>Credentials</strong> a tıklıyoruz.<strong>Add New Credential</strong> diyoruz.Username ve password girip -bu arada username inizi anlamlı vermenizi öneririm- alttaki mail kısmını işaretleyip(check edip) <strong>Create Credential</strong> diyoruz.Daha sonra env.staging dosyamıza gelip</p>
+
+<ul>
+<li>SMTP_PASSWORD=</li>
+<li>SMTP_USER_NAME=</li>
+<li>SMTP_ADDRESS=</li>
+</ul>
+
+
+<p>kısımlarını doldurup kaydediyoruz.Sıradaki adımımız ise bunları herokuya setlemek oluyor.Bunu da aşağıdaki kod ile yapıyoruz.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>heroku config:set <span class="nv">SMTP_PASSWORD</span><span class="o">=</span> ******
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Unutmayın password , username ve adress in her biri için setleme yapılmalıdır.</p>
+
+<p>Setleme işlemlerini de bitirdikten sonra heroku dashboard a gidip settings e girip  &ldquo;Revial Config Vars&rdquo; a tıklayıp setleyip setleyemediğimizi kontrol ediyoruz.Eğer adımları doğru uyguladıysak set ettiğimiz alanları orada görüyoruz ve artık uygulamamızda gönderdiğimiz mailleri sorunsuzca gönderebiliyoruz.</p>
+
+<p><span style="color:red;">Dip not : Heroku da resources kısmında worker ınızın on durumda olması gerekmektedir.</span></p>
+
+<p>Ve bunun sonunda ikinci günü de bitirip workshop ı sonlandırdık.Umarım anlattıklarım içinde herkes kendine yararlı olabilcek şeyler bulmuştur.Kendinize iyi bakın sağlıklı beslenin!! :)</p>
+]]></content>
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Workshop Serüveni İlk Gün]]></title>
+        <link href="http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun/"/>
+        <updated>2016-07-31T13:45:11+03:00</updated>
+        <id>http://muratrahmikurtul.github.io/blog/2016/07/31/workshop-ilk-gun</id>
+        <content type="html"><![CDATA[<p>Merhaba arkadaşlar uzun süredir aklımda olan blog açma fikrini hayata geçiriyorum sonunda. Faydalı olacağına inandığım konuları ve tecrübeleri sizlerle paylaşmaya çalışacağım.</p>
+
+<h2>Öğleden önce</h2>
+
+<p>Sabah uyandığımda heyecanlıydım. Ruby on Rails konulu workshop için sabırsızlanıyordum. Kahvaltı bile yapmadan duş alıp direk workshop a gittim. Eğitimi en sağlıklı nerden takip edebilirim diyerek bir tahminde bulundum ve yerimi aldım. Öğleden önce bize değerli eğitmenimiz <a href="https://twitter.com/toziserikan?lang=tr">Tayfun Bey</a> yardımcı olacaktı , geldi ufak bir konuşmanın ardından workshop a start verdi.Temel giriş bilgileriyle ısınma turları atarken not tutmadığımı farkeden eğitmenimin tepkisiyle hemen kalkıp kağıtlarımı alıp not tutmaya başladım. Burdan da kendisine bu vesileyle özürlerimi iletiyorum.İlk gün işlenen konular arasında <strong>semantic versiyonlama,tasarım şablonları,mvc yapısı,activerecord associations,polimorfizm,web serverlar(server,domain,dns gibi kavramlar),restful mantığı</strong> vardı.</p>
+
+<h5>Semantic Versiyonlama</h5>
+
+<p>X.Y.Z | p şeklinde gösterilen versiyonlama da <strong>X</strong> major , <strong>Y</strong> minor , <strong>Z</strong> patch , <strong>P</strong> ise opsiyonel i ifade edermiş. Ruby on Rails ile uğraşanlar &lsquo;gem'leri bilirler. Gemlerin versiyonları vardır ve gemfile da örneğin ; gem 'haml&rsquo;, &lsquo;~> 4.0&rsquo; , gibi ifadeler bulunur. Semantic versiyonlama konusundan sonra gemin yanındaki rakamlar anlamlı hale gelmişti kafamda.Fakat halen kafamda birkaç soru vardı. Bu rakamlar neye göre değişiyordu? Tam ben bunları düşünürken eğitmenimizden cevap gecikmedi. <strong>Z</strong> bir hata düzeltimi sonrası , <strong>Y</strong> yeni bir özellik ekleme sonrası , <strong>X</strong> ise köklü bir yenilik sonrası değişirmiş. Kafamdaki soru işaretinin giderilemisin mutluluğunu yaşarken Tayfun Beyden bir soru geldi. Versiyondan önce gelen &lsquo;~>&rsquo; bu işaretin anlamı neydi? Kimse bilmiyordu. Böylece günün ilk ödevini almış olduk.Bu arada ilk yazımın hatrına cevabı verip sizi araştırma derdinden kurtarayım :). Örneğin &lsquo;~> 2.0.3&rsquo; demek &lsquo;>= 2.0.3 ve &lt;2.1&rsquo; le aynı demektir. Semantic versiyonlama ile ilgili daha detaylı bilgilere <a href="https://github.com/lab2023/playbook/blob/develop/development/cevik_proje_yonetimi.md">Lab2023 Playbook</a> dan ulaşabilirsiniz.</p>
+
+<h5>MVC Yapısı</h5>
+
+<p>MVC yapısını isminin baş harflerinden de anlaşılacağı üzere <strong>M</strong>odel , <strong>V</strong>iew , ve <strong>C</strong>ontroller oluşturur.</p>
+
+<ul>
+<li><strong>Model</strong> ; Rails'te anladığım kadarıyla modeller veritabanı ilişkileri için kullanılır. Genellikle veritabanınızdaki bir tablo için bir model oluşturursunuz. Örneğin kitap modeli veritabanınızdaki kitap tablosuyla ilişkilidir. Tablo üzerinde CREATE DELETE UPDATE gibi işlemleri kitap modelinizle yaparsınız. Örneğin Kitap tablosunda bir arama sorgu kodu örneği verecek olursak ;</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>
+</span><span class='line'>    Book.where<span class="o">(</span>:name <span class="o">=</span>&gt; <span class="s1">&#39;Ruby on Rails&#39;</span><span class="o">)</span>.first
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><strong>Controller</strong> ; MVC yapısının kalbidir. İstek ve cevapları yönetir. İstekleri alır işlemden geçirir ve View a sonuç gönderir. İşlemlerin kaydı için verileri Model kısmına gene Controller yollar.</li>
+</ul>
+
+
+<pre><code class="sh">       class ExampleController &lt; ApplicationController
+
+         def index
+           # logic to list all recipes
+         end
+
+         def show
+           # logic to show a particular recipe
+         end
+
+         def create
+           # logic to create a new recipe
+         end
+
+         def update
+           # logic to update a particular recipe
+         end
+       end
+</code></pre>
+
+<ul>
+<li><strong>View</strong> ; yaptığınız uygulamanın kullanıcıya görünen kısmı viewlardır. View da database tarafıyla yapacağınız bir etkileşim yani model ile kuracağınız ilişki mutlaka controller üzerinden olmalıdır çünkü MVC yapısının gereği zaten budur. View da kullanıcıyla iletişime buttonlar,formlar vb. ile kullanıcıyla iletişime geçilir. View ve Controller ı  ilişkilendirmek için bir de <strong>Helper</strong> lar vardır fakat buna ikinci günü anlatırken değineceğim.</li>
+</ul>
+
+
+<h5>Polimorfizm (Active Record Associations)</h5>
+
+<p>Ruby on Rails da polimorfizm önemli bir konudur. Örneğin bir yazarın birden fazla kitabı bir kitabın ise bir tane yazarı olabilir.Bir kategoride birden fazla kitap bir kitabın ise bir kategorisi olur gibi ilişkiler vardır. İşte bu ilişkileri kurmak için kullandığımız anahtar kelimeler şunlardır ;</p>
+
+<ul>
+<li>belongs_to</li>
+<li>has_one</li>
+<li>has_many</li>
+<li>has_many :through</li>
+<li>has_one :through</li>
+<li>has_and_belongs_to_many</li>
+</ul>
+
+
+<p><img src="http://guides.rubyonrails.org/images/habtm.png" alt="Örnek" /></p>
+
+<p>Daha fazla bilgi için <a href="http://guides.rubyonrails.org/association_basics.html">Guide Ruby on Rails</a></p>
+
+<h5>Web Server Tarafı</h5>
+
+<p>Dünyada en çok bilinen 3 web server ı sıralayacak olursak ;</p>
+
+<ul>
+<li>3) iis</li>
+<li>2) Apache</li>
+<li>1) Nginx</li>
+</ul>
+
+
+<p>İnternet üzerinde iletişim DNS denen &ldquo;Domain Name Server&rdquo; lar tarafından yapılır. Basitçe bu dns lerin görevi ismi ip ye ip yi isme çevirmektir denebilir. ns1.blablabla.net ns2.blablabla.net şeklindedirler. <strong>Domain</strong> dediğimiz şey alan adıdır. Örneğin &ldquo;www.rubyonrails.org.tr&rdquo; adresinde <strong>www</strong> kısmı sub domain , <strong>rubyonrails</strong> kısmı body , <strong>org</strong> kısmı uzantı , <strong>tr</strong> kısmı ise country yani ülke kodu kısmıdır. <strong>rubyonrails.org.tr</strong> kısmının tamamına ise root denir. Temel olarak kullanıcı sunucuya istek yapar ve sunucudan da kullanıcıya bir dönüş olur. İşte bu dönüşlerin http status code ları vardır yani biraz açacak olursak http default port : 80 dir ssh ise 22 dir. Eğer http status code u 200 dönerse siteye giriş yapabilirsiniz. Eğer 40X kodu dönerde &ldquo;bulunamadı&rdquo; hatası alırsınız. Herkesin bileceği üzere 404:Not Found :). Fakat 50X gibi bir status code dönerse şu anlama gelmektedir sayfa bulundu fakat sunucu kapalı.Burda değinilmesi gereken bir diğer konu ise virtual hosting sayesinde bir ip den çok sayfaya ulaşılabilindiğidir.</p>
+
+<p>Basitçe çizecek olursak Kullanıcı -> Web Server(Nginx) -> App server(Rack) : puma,uniqorn,webrick -> App(Controller,View,Model)</p>
+
+<ul>
+<li>App Server ; App serverın görevi request gelen dataları objeye yani ruby classına çevirmektir.</li>
+</ul>
+
+
+<p>İstek tipleri POST,GET,PATCH,PUT,DELETE , dir. POST u CREATE e , GET i  SHOW/INDEX e , PATCH/PUT u UPDATE e , DELETE i DESTROY a çevirir. Yani şöyle bir mantık yürütebiliriz. url+metod = create , url+id+metod = update gibi.</p>
+
+<p>İşte bu yukarıda yazan mimariye göre kodlama yapmaya <strong>restful</strong> denir.</p>
+
+<p>Son olarak url nin root/resource/action/params kısımlarından oluştuğuna ve bu kısımların her birine <strong>segment</strong> dendiğine değinip <a href="https://twitter.com/toziserikan?lang=tr">Tayfun Bey</a> sözlerine son vererek eğitimin öğleden önceki kısmını bitirdi.Kendisine burdan bu güzel eğitim için tekrar teşekkürlerimi sunuyorum.</p>
+
+<h3>Öğleden Sonra</h3>
+
+<p>Sabahki güzel eğitimin ardından öğle arası sabah kahvaltı yapmamış olmanın verdiği açlık hissiyle bayağı bir yemek yedim :) ve geri döndüm. Öğleden sonra bize yardımcı olacak olan eğitmenimiz <a href="https://twitter.com/isoakbudak?lang=tr">İsmail Bey</a>di. Kendisiyle birlikte Ruby on Rails de kendisi ve <a href="https://www.lab2023.com">şirketinin</a> oluşturduğu bir tool olan <a href="https://github.com/lab2023/cybele">Cybele</a> ile basit bir blog geliştirecektik. Öncelikle gerekli kurulumlarımızı yaparak projemizi oluşturduk.İsmail Bey ilk işimizin -daha yukarılarda kısaca değindiğim- &lsquo;gem'leri tanımamız olduğunu söyledi.Herkes gemfile dosyasını açtı ve İsmail Bey anlatmaya başladı.Aklımda kalan bir kaç gem Devise,Hierapolis.Zaten bütün gemleri aklınızda tutmanızın imkanı yok.</p>
+
+<ul>
+<li>Devise Gemi ; Kısaca kullanıcı girişini denetlemenizi sağlayan gem.</li>
+<li>Hierapolis Gemi ; Admin teması.</li>
+</ul>
+
+
+<p>Şimdi aklınıza şöyle bir soru gelmiş olabilir. İşime yarayacak gem i nerden bulacağım? Çok kolay. <a href="https://www.ruby-toolbox.com/">Burdan</a> , adrese gidip Categories sekmesine tıklarsanız orada istediğiniz kategoriye uygun gemleri üstelik istatistiklerini de görerek ulaşabilirsiniz.</p>
+
+<p>Öğleden sonranın tamamı kurulum ve gem tanımayla geçti. İkinci gün, nihayet kodlamaya, basit bir blog uygulaması yapmaya geçebilecektik. Burada yazımı şimdilik sonlandırıyorum. İkinci günü diğer yazımda anlatacağım. Hepinize bol RoR lu günler dilerim! :)</p>
+]]></content>
+    </entry>
+    
+</feed>
